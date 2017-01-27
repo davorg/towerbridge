@@ -11,7 +11,10 @@ use Date::ICal;
 use Data::ICal;
 use Data::ICal::Entry::Event;
 
-my $this_year = (localtime)[5] + 1900;
+my $i = 0;
+
+my $now = localtime;
+my ($curr_mon, $curr_year) = ($now->mon, $now->year);
 
 my $ical = Data::ICal->new();
 my $fmt = '%H:%M %d %b %Y';
@@ -23,13 +26,20 @@ wq('http://www.towerbridge.org.uk/lift-times/')
   ->each(sub { push @lifts, [ map { $_->text } $_[1]->contents ] });
 
 foreach (@lifts) {
-  say "$_->[2] $_->[1] $this_year";
-  my $date = Time::Piece->strptime("$_->[2] $_->[1] $this_year", $fmt);
+  my $date = Time::Piece->strptime("$_->[2] $_->[1] $curr_year", $fmt);
+  # If the month number of this event is less than the current month
+  # number then we've gone to the next year. Increment the year number
+  # and re-calculate.
+  if ($date->mon < $curr_mon) {
+    ++$curr_year;
+    $date = Time::Piece->strptime("$_->[2] $_->[1] $curr_year", $fmt);
+  }
   my $event = Data::ICal::Entry::Event->new();
   $event->add_properties(
     summary => 'Tower Bridge Lift',
     description => "$_->[3] ($_->[4])",
     dtstart => Date::ICal->new(epoch => $date->epoch)->ical,
+    duration => 0,
   );
   $ical->add_entry($event);
 }
