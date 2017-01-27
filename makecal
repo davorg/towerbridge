@@ -5,19 +5,24 @@ use warnings;
 use 5.010;
 
 use Data::Dumper;
-use Time::Piece;
+use DateTime;
+use DateTime::Format::Strptime;
 use Web::Query;
+use JSON;
 use Date::ICal;
 use Data::ICal;
 use Data::ICal::Entry::Event;
 
 my $i = 0;
 
-my $now = localtime;
-my ($curr_mon, $curr_year) = ($now->mon, $now->year);
+my $now = DateTime->now;
+my ($curr_mon, $curr_year) = ($now->month, $now->year);
 
-my $ical = Data::ICal->new();
-my $fmt = '%H:%M %d %b %Y';
+my $ical = Data::ICal->new(time_zone => 'Europe/London');
+my $dt_parser = DateTime::Format::Strptime->new(
+  pattern => '%H:%M %d %b %Y',
+  time_zone => 'Europe/London',
+);
 
 my @lifts;
 
@@ -26,13 +31,13 @@ wq('http://www.towerbridge.org.uk/lift-times/')
   ->each(sub { push @lifts, [ map { $_->text } $_[1]->contents ] });
 
 foreach (@lifts) {
-  my $date = Time::Piece->strptime("$_->[2] $_->[1] $curr_year", $fmt);
+  my $date = $dt_parser->parse_datetime("$_->[2] $_->[1] $curr_year");
   # If the month number of this event is less than the current month
   # number then we've gone to the next year. Increment the year number
   # and re-calculate.
   if ($date->mon < $curr_mon) {
     ++$curr_year;
-    $date = Time::Piece->strptime("$_->[2] $_->[1] $curr_year", $fmt);
+    $date = $dt_parser->parse_datetime("$_->[2] $_->[1] $curr_year");
   }
   my $event = Data::ICal::Entry::Event->new();
   $event->add_properties(
@@ -42,7 +47,18 @@ foreach (@lifts) {
     duration => 0,
   );
   $ical->add_entry($event);
+
+  my $lift;
+  $lift->{datetime}  = $date->ymd('-') . 'T' . $date->hms . $date->strftime('%z');
+  $lift->{vessel}    = $_->[3];
+  $lift->{direction} = $_->[4];
+  $lift->{tz}        = $date->time_zone_long_name;
+
+  $_ = $lift;
 }
 
 open my $ical_fh, '>', 'towerbridge.ics' or die $!;
 print $ical_fh $ical->as_string;
+
+open my $json_fh, '>', 'towerbridge.json' or die $!;
+print $json_fh JSON->new->pretty->encode(\@lifts);
