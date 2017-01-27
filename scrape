@@ -1,0 +1,27 @@
+#!/usr/bin/perl
+
+use strict;
+use warnings;
+use 5.010;
+
+use Web::Query;
+use Data::Dumper;
+
+my $this_year = (localtime)[5] + 1900;
+
+my @lifts;
+
+wq('http://www.towerbridge.org.uk/lift-times/')
+  ->find('table.lined tbody tr')
+  ->each(sub { push @lifts, [ map { $_->text } $_[1]->contents ] });
+
+foreach (@lifts) {
+  my $lift;
+  $lift->{datetime}  = "$_->[2] $_->[1] $this_year";
+  $lift->{vessel}    = $_->[3];
+  $lift->{direction} = $_->[4];
+
+  $_ = $lift;
+}
+
+say Dumper \@lifts;
