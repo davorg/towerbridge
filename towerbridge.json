@@ -1,116 +1,86 @@
 [
    {
-      "vessel" : "Maintenance Lift",
-      "tz" : "Europe/London",
       "direction" : "Up river",
-      "datetime" : "2017-01-28T07:30:00+0000"
-   },
-   {
-      "datetime" : "2017-01-28T08:00:00+0000",
-      "vessel" : "Maintenance Lift",
-      "tz" : "Europe/London",
-      "direction" : "Down river"
-   },
-   {
-      "datetime" : "2017-01-29T01:30:00+0000",
-      "direction" : "Up river",
-      "tz" : "Europe/London",
-      "vessel" : "Dutch Master"
-   },
-   {
-      "datetime" : "2017-01-29T07:30:00+0000",
-      "tz" : "Europe/London",
-      "vessel" : "Maintenance Lift",
-      "direction" : "Up river"
-   },
-   {
-      "datetime" : "2017-01-29T08:00:00+0000",
-      "vessel" : "Maintenance Lift",
-      "tz" : "Europe/London",
-      "direction" : "Down river"
-   },
-   {
       "vessel" : "Silver Cloud",
       "tz" : "Europe/London",
-      "direction" : "Up river",
       "datetime" : "2017-06-09T15:30:00+0100"
    },
    {
       "direction" : "Down river",
-      "tz" : "Europe/London",
       "vessel" : "Silver Cloud",
+      "tz" : "Europe/London",
       "datetime" : "2017-06-11T14:45:00+0100"
    },
    {
+      "direction" : "Up river",
       "vessel" : "Silver Wind",
       "tz" : "Europe/London",
-      "direction" : "Up river",
       "datetime" : "2017-06-11T16:30:00+0100"
    },
    {
-      "datetime" : "2017-06-13T03:45:00+0100",
-      "tz" : "Europe/London",
       "direction" : "Down river",
-      "vessel" : "Silver Wind"
-   },
-   {
-      "datetime" : "2017-06-29T07:15:00+0100",
-      "tz" : "Europe/London",
-      "vessel" : "Silver Wind",
-      "direction" : "Up river"
-   },
-   {
       "vessel" : "Silver Wind",
       "tz" : "Europe/London",
+      "datetime" : "2017-06-13T03:45:00+0100"
+   },
+   {
+      "direction" : "Up river",
+      "vessel" : "Silver Wind",
+      "tz" : "Europe/London",
+      "datetime" : "2017-06-29T07:15:00+0100"
+   },
+   {
       "direction" : "Down river",
+      "vessel" : "Silver Wind",
+      "tz" : "Europe/London",
       "datetime" : "2017-06-30T06:15:00+0100"
    },
    {
-      "datetime" : "2017-07-13T18:00:00+0100",
       "direction" : "Up river",
+      "vessel" : "Silver Wind",
       "tz" : "Europe/London",
-      "vessel" : "Silver Wind"
+      "datetime" : "2017-07-13T18:00:00+0100"
    },
    {
-      "datetime" : "2017-07-14T19:15:00+0100",
       "direction" : "Down river",
+      "vessel" : "Silver Wind",
       "tz" : "Europe/London",
-      "vessel" : "Silver Wind"
+      "datetime" : "2017-07-14T19:15:00+0100"
    },
    {
+      "direction" : "Up river",
       "vessel" : "Hamburg",
       "tz" : "Europe/London",
-      "direction" : "Up river",
       "datetime" : "2017-07-23T07:45:00+0100"
    },
    {
-      "datetime" : "2017-07-24T00:15:00+0100",
       "direction" : "Down river",
+      "vessel" : "Hamburg",
       "tz" : "Europe/London",
-      "vessel" : "Hamburg"
+      "datetime" : "2017-07-24T00:15:00+0100"
    },
    {
-      "datetime" : "2017-07-31T08:45:00+0100",
-      "tz" : "Europe/London",
-      "direction" : "Up river",
-      "vessel" : "Silver Wind"
-   },
-   {
-      "datetime" : "2017-08-01T07:45:00+0100",
-      "vessel" : "Silver Wind",
-      "tz" : "Europe/London",
-      "direction" : "Down river"
-   },
-   {
-      "tz" : "Europe/London",
       "direction" : "Up river",
       "vessel" : "Silver Wind",
+      "tz" : "Europe/London",
+      "datetime" : "2017-07-31T08:45:00+0100"
+   },
+   {
+      "direction" : "Down river",
+      "vessel" : "Silver Wind",
+      "tz" : "Europe/London",
+      "datetime" : "2017-08-01T07:45:00+0100"
+   },
+   {
+      "direction" : "Up river",
+      "vessel" : "Silver Wind",
+      "tz" : "Europe/London",
       "datetime" : "2017-08-24T05:00:00+0100"
    },
    {
-      "datetime" : "2017-08-25T04:30:00+0100",
-      "tz" : "Europe/London",
+      "direction" : "Down river",
       "vessel" : "Silver Wind",
-      "direction" : "Down river"
+      "tz" : "Europe/London",
+      "datetime" : "2017-08-25T04:30:00+0100"
    }
 ]
