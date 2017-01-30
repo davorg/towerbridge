@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@davorg">
+    <meta name="twitter:creator" content="@davorg">
+    <meta name="twitter:title" content="Tower Bridge Data">
+    <meta name="twitter:description" content="Information about Tower Bridge's lift schedule provided in machine-readbable formats.">
+    <meta name="twitter:image" content="http://towerbridge.dave.org.uk/towerbridge.jpg">
+  <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://zetabee.com/icaljs/res/embed.css" />
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Tower Bridge Data</title>
+  </head>
+  <body>
+    <h1>Tower Bridge Data</h1>
+    <div class="content">
+      <h2>Upcoming lifts</h2>
+      <!-- Move this div where you want to insert the calendar -->
+      <div id="icjs"></div>
+
+      <script>(function() {
+
+  // Customize these as you wish
+  var pastdays   = 0;       // # of past days to show (0 to 30)
+  var futuredays = 365;     // # of future days to show (0 to 365)
+  var cachemins  = 10;      // # of minutes to wait before refreshing calendar data (2 to 1440)
+  var container  = "icjs";  // ID of div to embed calendar into
+
+  // Do not change anything below this
+  var s = document.createElement("script"); s.type = "text/javascript"; s.async = true; s.src = "https://zetabee.com/icaljs/embed?calid=dW55WXlDekVhVktTYlZEay9MUW90dz09&offset=0&cachemins=" + cachemins + "&futuredays=" + futuredays + "&pastdays=" + pastdays + "&container=" + container;
+  (document.getElementsByTagName("head")[0] || document.getElementsByTagName("body")[0]).appendChild(s);
+})();</script><!-- You can modify loading the default CSS below and use your own CSS if you want -->
+<link rel="stylesheet" type="text/css" href="https://zetabee.com/icaljs/res/embed.css" />
+
+          <p>Download the data as <a href="/towerbridge.ics">a calendar</a>
+            or as <a href="/towerbridge.json">JSON</a>.</p>
+      </div>
+
+    <!-- Go to www.addthis.com/dashboard to customize your tools -->
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-56165a02d0fe210e" async="async"></script>
+<!-- Go to www.addthis.com/dashboard to customize your tools -->
+    <footer>
+      <div class="addthis_native_toolbox"></div>
+      Made by <a href="https://twitter.com/davorg">@davorg</a>. Let him know if you'd like the data in any other format.<br>
+      Data scraped from the
+      <a href="http://www.towerbridge.org.uk/lift-times/">Tower Bridge web
+      site</a>.<br>
+      Code <a href="https://github.com/davorg/towerbridge">on Github</a>.
+    </footer>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-56332-59', 'auto');
+  ga('send', 'pageview');
+
+</script>
+  </body>
+</html>

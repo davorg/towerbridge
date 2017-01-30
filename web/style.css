@@ -1,0 +1,31 @@
+body {
+  background: url(towerbridge.jpg) no-repeat top left fixed;
+  background-size: cover;
+  background-color: black;
+  color: white;
+  font-family: 'Slabo 27px', serif;
+}
+.content {
+  float: right;
+  padding-right: 40px;
+}
+footer {
+  position: fixed;
+  left: 10px;
+  bottom: 5px;
+}
+h1 {
+  font-size: 900%;
+  margin-left: .5em;
+  margin-top: .25em;
+  margin-bottom: 0;
+}
+a:link    { color: white }
+a:visited { color: white }
+a:hover   { color: white }
+a:active  { color: white }
+div.addthis_native_toolbox { display: inline; color: white }
+
+tr.ij_date {
+  background-color: #666;
+}
