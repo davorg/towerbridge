@@ -7,15 +7,15 @@ use 5.010;
 use Data::Dumper;
 use DateTime;
 use DateTime::Format::Strptime;
+use DateTime::Format::ICal;
 use Web::Query;
 use JSON;
-use Date::ICal;
 use Data::ICal;
 use Data::ICal::Entry::Event;
 
 my $i = 0;
 
-my $now = DateTime->now;
+my $now = DateTime->now(time_zone => 'Europe/London');
 my ($curr_mon, $curr_year) = ($now->month, $now->year);
 
 my $ical = Data::ICal->new(time_zone => 'Europe/London');
@@ -24,7 +24,7 @@ my $dt_parser = DateTime::Format::Strptime->new(
   time_zone => 'Europe/London',
 );
 
-my $now_ical = Date::ICal->new(epoch => time);
+my $now_ical = DateTime::Format::ICal->format_datetime($now);
 
 my @lifts;
 
@@ -52,15 +52,15 @@ foreach (@lifts) {
   $event->add_properties(
     summary => 'Tower Bridge Lift',
     description => "$_->[3] ($_->[4])",
-    dtstart => Date::ICal->new(epoch => $date->epoch)->ical,
+    dtstart => DateTime::Format::ICal->format_datetime($date),
     duration => 'PT30M',
-    dtstamp => $now_ical->ical,
+    dtstamp => $now_ical,
     uid => $date->epoch . '@towerbridge.dave.org.uk',
   );
   $ical->add_entry($event);
 
   my $lift;
-  $lift->{datetime}  = $date->ymd('-') . 'T' . $date->hms . $date->strftime('%z');
+  $lift->{datetime}  = $date->iso8601 . $date->strftime('%z');
   $lift->{vessel}    = $_->[3];
   $lift->{direction} = $_->[4];
 

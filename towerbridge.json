@@ -6,18 +6,18 @@
    },
    {
       "datetime" : "2017-02-10T02:15:00+0000",
-      "direction" : "Down river",
+      "vessel" : "Tug",
+      "direction" : "Down river"
+   },
+   {
+      "datetime" : "2017-02-13T13:30:00+0000",
+      "direction" : "Up river",
       "vessel" : "Tug"
    },
    {
-      "vessel" : "Tug",
-      "direction" : "Up river",
-      "datetime" : "2017-02-13T13:30:00+0000"
-   },
-   {
+      "datetime" : "2017-02-13T14:00:00+0000",
       "vessel" : "Vessel",
-      "direction" : "Down river",
-      "datetime" : "2017-02-13T14:00:00+0000"
+      "direction" : "Down river"
    },
    {
       "direction" : "Up river",
@@ -25,19 +25,19 @@
       "datetime" : "2017-06-09T15:30:00+0100"
    },
    {
+      "datetime" : "2017-06-11T14:45:00+0100",
       "direction" : "Down river",
-      "vessel" : "Silver Cloud",
-      "datetime" : "2017-06-11T14:45:00+0100"
+      "vessel" : "Silver Cloud"
    },
    {
-      "direction" : "Up river",
+      "datetime" : "2017-06-11T16:30:00+0100",
       "vessel" : "Silver Wind",
-      "datetime" : "2017-06-11T16:30:00+0100"
+      "direction" : "Up river"
    },
    {
+      "datetime" : "2017-06-13T03:45:00+0100",
       "direction" : "Down river",
-      "vessel" : "Silver Wind",
-      "datetime" : "2017-06-13T03:45:00+0100"
+      "vessel" : "Silver Wind"
    },
    {
       "direction" : "Up river",
@@ -45,29 +45,29 @@
       "datetime" : "2017-06-29T07:15:00+0100"
    },
    {
-      "datetime" : "2017-06-30T06:15:00+0100",
       "direction" : "Down river",
-      "vessel" : "Silver Wind"
+      "vessel" : "Silver Wind",
+      "datetime" : "2017-06-30T06:15:00+0100"
    },
    {
-      "datetime" : "2017-07-13T18:00:00+0100",
+      "vessel" : "Silver Wind",
       "direction" : "Up river",
-      "vessel" : "Silver Wind"
+      "datetime" : "2017-07-13T18:00:00+0100"
    },
    {
       "datetime" : "2017-07-14T19:15:00+0100",
-      "vessel" : "Silver Wind",
-      "direction" : "Down river"
-   },
-   {
-      "vessel" : "Hamburg",
-      "direction" : "Up river",
-      "datetime" : "2017-07-23T07:45:00+0100"
-   },
-   {
       "direction" : "Down river",
+      "vessel" : "Silver Wind"
+   },
+   {
+      "datetime" : "2017-07-23T07:45:00+0100",
       "vessel" : "Hamburg",
-      "datetime" : "2017-07-24T00:15:00+0100"
+      "direction" : "Up river"
+   },
+   {
+      "datetime" : "2017-07-24T00:15:00+0100",
+      "direction" : "Down river",
+      "vessel" : "Hamburg"
    },
    {
       "vessel" : "Silver Wind",
@@ -76,12 +76,12 @@
    },
    {
       "datetime" : "2017-08-01T07:45:00+0100",
-      "direction" : "Down river",
-      "vessel" : "Silver Wind"
+      "vessel" : "Silver Wind",
+      "direction" : "Down river"
    },
    {
-      "direction" : "Up river",
       "vessel" : "Silver Wind",
+      "direction" : "Up river",
       "datetime" : "2017-08-24T05:00:00+0100"
    },
    {
