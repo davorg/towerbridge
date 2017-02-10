@@ -24,6 +24,8 @@ my $dt_parser = DateTime::Format::Strptime->new(
   time_zone => 'Europe/London',
 );
 
+my $now_ical = Date::ICal->new(epoch => time);
+
 my @lifts;
 
 wq('http://www.towerbridge.org.uk/lift-times/')
@@ -44,7 +46,9 @@ foreach (@lifts) {
     summary => 'Tower Bridge Lift',
     description => "$_->[3] ($_->[4])",
     dtstart => Date::ICal->new(epoch => $date->epoch)->ical,
-    duration => 0,
+    duration => 'PT30M',
+    dtstamp => $now_ical->ical,
+    uid => $date->epoch . '@towerbridge.dave.org.uk',
   );
   $ical->add_entry($event);
 
