@@ -32,6 +32,9 @@ wq('http://www.towerbridge.org.uk/lift-times/')
   ->find('table.lined tbody tr')
   ->each(sub { push @lifts, [ map { $_->text } $_[1]->contents ] });
 
+my %seen;
+my @json;
+
 foreach (@lifts) {
   my $date = $dt_parser->parse_datetime("$_->[2] $_->[1] $curr_year");
   # If the month number of this event is less than the current month
@@ -41,6 +44,10 @@ foreach (@lifts) {
     ++$curr_year;
     $date = $dt_parser->parse_datetime("$_->[2] $_->[1] $curr_year");
   }
+
+  # Tower Bridge web site occasionally has duplicates
+  next if $seen{$date->epoch}++;
+
   my $event = Data::ICal::Entry::Event->new();
   $event->add_properties(
     summary => 'Tower Bridge Lift',
@@ -57,11 +64,11 @@ foreach (@lifts) {
   $lift->{vessel}    = $_->[3];
   $lift->{direction} = $_->[4];
 
-  $_ = $lift;
+  push @json, $lift;
 }
 
 open my $ical_fh, '>', 'towerbridge.ics' or die $!;
 print $ical_fh $ical->as_string;
 
 open my $json_fh, '>', 'towerbridge.json' or die $!;
-print $json_fh JSON->new->pretty->encode(\@lifts);
+print $json_fh JSON->new->pretty->encode(\@json);
