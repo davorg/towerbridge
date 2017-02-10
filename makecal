@@ -52,7 +52,6 @@ foreach (@lifts) {
   $lift->{datetime}  = $date->ymd('-') . 'T' . $date->hms . $date->strftime('%z');
   $lift->{vessel}    = $_->[3];
   $lift->{direction} = $_->[4];
-  $lift->{tz}        = $date->time_zone_long_name;
 
   $_ = $lift;
 }
