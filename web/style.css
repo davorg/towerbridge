@@ -1,3 +1,9 @@
+@font-face {
+  font-family: 'Hustlers Rough Demo';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Hustlers Rough Demo.ttf') format('truetype');
+}
 body {
   background: url(towerbridge.jpg) no-repeat top left fixed;
   background-size: cover;
@@ -19,6 +25,7 @@ h1 {
   margin-left: .5em;
   margin-top: .25em;
   margin-bottom: 0;
+  font-family: 'Hustlers Rough Demo', serif;
 }
 a:link    { color: white }
 a:visited { color: white }
