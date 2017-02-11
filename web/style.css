@@ -1,32 +1,41 @@
 @font-face {
   font-family: 'Hustlers Rough Demo';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Hustlers Rough Demo.ttf') format('truetype');
+  src: url('Hustlers-Rough-Demo.ttf') format('truetype');
+  src: url('Hustlers-Rough-Demo.otf') format('opentype');
 }
 body {
   background: url(towerbridge.jpg) no-repeat top left fixed;
   background-size: cover;
   background-color: black;
   color: white;
-  font-family: 'Playfair Display', serif;
+  font-family: 'Hustlers Rough Demo', serif;
+  font-size: 150%;
 }
 .content {
   float: right;
-  padding-right: 40px;
+  padding-right: 20px;
 }
 footer {
   position: fixed;
-  left: 10px;
-  bottom: 5px;
+  left: 20px;
+  bottom: 15px;
 }
 h1 {
-  font-size: 900%;
-  margin-left: .5em;
-  margin-top: .25em;
+  font-size: 700%;
+  font-weight: normal;
+  color: black;
+  padding: 0;
+  margin-left: .25em;
+  margin-top: .125em;
   margin-bottom: 0;
   font-family: 'Hustlers Rough Demo', serif;
 }
+
+h2 {
+  color: black;
+  font-weight: normal;
+}
+
 a:link    { color: white }
 a:visited { color: white }
 a:hover   { color: white }
