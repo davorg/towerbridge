@@ -7,7 +7,6 @@ use 5.010;
 use Data::Dumper;
 use DateTime;
 use DateTime::Format::Strptime;
-use DateTime::Format::ICal;
 use Web::Query;
 use JSON;
 use Data::ICal;
@@ -18,13 +17,12 @@ my $i = 0;
 my $now = DateTime->now(time_zone => 'Europe/London');
 my ($curr_mon, $curr_year) = ($now->month, $now->year);
 
-my $ical = Data::ICal->new(time_zone => 'Europe/London');
+my $ical = Data::ICal->new();
 my $dt_parser = DateTime::Format::Strptime->new(
   pattern => '%H:%M %d %b %Y',
-  time_zone => 'Europe/London',
 );
 
-my $now_ical = DateTime::Format::ICal->format_datetime($now);
+my $now_ical = dt2ical($now);
 
 my @lifts;
 
@@ -52,7 +50,7 @@ foreach (@lifts) {
   $event->add_properties(
     summary => 'Tower Bridge Lift',
     description => "$_->[3] ($_->[4])",
-    dtstart => DateTime::Format::ICal->format_datetime($date),
+    dtstart => dt2ical($date),
     duration => 'PT30M',
     dtstamp => $now_ical,
     uid => $date->epoch . '@towerbridge.dave.org.uk',
@@ -72,3 +70,9 @@ print $ical_fh $ical->as_string;
 
 open my $json_fh, '>', 'towerbridge.json' or die $!;
 print $json_fh JSON->new->pretty->encode(\@json);
+
+sub dt2ical {
+  my ($dt) = @_;
+
+  return $dt->ymd('') . 'T' . $dt->hms('');
+}
