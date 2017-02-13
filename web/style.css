@@ -4,7 +4,7 @@
   src: url('Hustlers-Rough-Demo.otf') format('opentype');
 }
 body {
-  background: url(towerbridge.jpg) no-repeat top left fixed;
+  background: url(towerbridge.jpg) no-repeat center center fixed;
   background-size: cover;
   background-color: black;
   color: white;
