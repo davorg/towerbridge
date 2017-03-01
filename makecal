@@ -69,7 +69,7 @@ open my $ical_fh, '>', 'towerbridge.ics' or die $!;
 print $ical_fh $ical->as_string;
 
 open my $json_fh, '>', 'towerbridge.json' or die $!;
-print $json_fh JSON->new->pretty->encode(\@json);
+print $json_fh JSON->new->pretty->encode({ lifts => \@json });
 
 sub dt2ical {
   my ($dt) = @_;
