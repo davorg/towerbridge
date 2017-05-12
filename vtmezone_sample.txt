@@ -1,5 +1,5 @@
 BEGIN:VTIMEZONE
-TZID:(GMT) Greenwich Mean Time - Dublin / Edinburgh / Lisbon / London
+TZID:Europe/London
 BEGIN:STANDARD
 DTSTART:19710101T020000
 TZOFFSETTO:-0000
