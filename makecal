@@ -11,7 +11,6 @@ use Web::Query;
 use JSON;
 use Data::ICal;
 use Data::ICal::Entry::Event;
-use DateTime::Format::ICal;
 
 my $i = 0;
 
