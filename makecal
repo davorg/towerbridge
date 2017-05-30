@@ -11,6 +11,9 @@ use Web::Query;
 use JSON;
 use Data::ICal;
 use Data::ICal::Entry::Event;
+use Data::ICal::Entry::TimeZone;
+use Data::ICal::Entry::TimeZone::Standard;
+use Data::ICal::Entry::TimeZone::Daylight;
 
 my $i = 0;
 
@@ -65,13 +68,34 @@ foreach (@lifts) {
   push @json, $lift;
 }
 
+
+my $tz = Data::ICal::Entry::TimeZone->new;
+$tz->add_properties(
+  tzid => 'Europe/London',
+);
+
+my $std = Data::ICal::Entry::TimeZone::Standard->new;
+$std->add_properties(
+  dtstart => '19710101T020000',
+  tzoffsetto => '+0000',
+  tzoffsetfrom => '+0100',
+  rrule => 'FREQ=YEARLY;WKST=MO;INTERVAL=1;BYMONTH=10;BYDAY=-1SU',
+);
+$tz->add_entry($std);
+
+my $day = Data::ICal::Entry::TimeZone::Daylight->new;
+$day->add_properties(
+  dtstart => '19710101T010000',
+  tzoffsetto => '+0100',
+  tzoffsetfrom => '+0000',
+  rrule => 'FREQ=YEARLY;WKST=MO;INTERVAL=1;BYMONTH=3;BYDAY=-1SU',
+);
+$tz->add_entry($day);
+
+$ical->add_entry($tz);
+
 open my $ical_fh, '>', 'towerbridge.ics' or die $!;
-my $ical_str = $ical->as_string;
-my $timezone = do { local $/; <DATA> };
-chomp($timezone);
-$timezone =~ s/\n/\015\012/g;
-$ical_str =~ s/(BEGIN:VCALENDAR)/$1\015\012$timezone/;
-print $ical_fh $ical_str;
+print $ical_fh $ical->as_string;
 
 open my $json_fh, '>', 'towerbridge.json' or die $!;
 print $json_fh JSON->new->pretty->encode({ lifts => \@json });
@@ -81,20 +105,3 @@ sub dt2ical {
 
   return [ $dt->strftime('%Y%m%dT%H%M%S'), { TZID => 'Europe/London' } ];
 }
-
-__END__
-BEGIN:VTIMEZONE
-TZID:Europe/London
-BEGIN:STANDARD
-DTSTART:19710101T020000
-TZOFFSETTO:+0000
-TZOFFSETFROM:+0100
-RRULE:FREQ=YEARLY;WKST=MO;INTERVAL=1;BYMONTH=10;BYDAY=-1SU
-END:STANDARD
-BEGIN:DAYLIGHT
-DTSTART:19710101T010000
-TZOFFSETTO:+0100
-TZOFFSETFROM:+0000
-RRULE:FREQ=YEARLY;WKST=MO;INTERVAL=1;BYMONTH=3;BYDAY=-1SU
-END:DAYLIGHT
-END:VTIMEZONE
