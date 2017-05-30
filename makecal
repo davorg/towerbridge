@@ -51,7 +51,7 @@ foreach (@lifts) {
     summary => 'Tower Bridge Lift',
     description => "$_->[3] ($_->[4])",
     dtstart => dt2ical($date),
-    duration => 'PT30M',
+    duration => 'PT10M',
     dtstamp => $now_ical,
     uid => $date->epoch . '@towerbridge.dave.org.uk',
   );
