@@ -22,6 +22,7 @@ my ($curr_mon, $curr_year) = ($now->month, $now->year);
 
 my $ical = Data::ICal->new();
 my $dt_parser = DateTime::Format::Strptime->new(
+  time_zone => 'Europe/London',
   pattern => '%H:%M %d %b %Y',
 );
 
