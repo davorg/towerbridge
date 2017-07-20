@@ -1,0 +1,32 @@
+<html>
+<head>
+<style type="text/css">
+table {
+  background-color: #ccc;
+  font-size: 75%;
+  font-family: sans-serif;
+}
+th {
+  padding-top: 1em;
+  background-color: #666;
+  color: #fff;
+  text-align: left;
+}
+</style>
+</head>
+<body>
+<table>
+[% last_date = 'Thu, Jan  1 1970';
+   FOR lift IN lifts;
+     date = lift.datetime.strftime('%a, %b %d %Y');
+     IF date != last_date %]
+<tr><th colspan="2">[% date %]</th></tr>
+[%     last_date = date;
+     END %]
+<tr><td>[% lift.datetime.strftime('%I:%M %P') %]</td>
+  <td>[% lift.vessel %] ([% lift.direction %])</td></tr>
+[% END;
+%]
+</table>
+</body>
+</html>
