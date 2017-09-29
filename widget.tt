@@ -40,8 +40,10 @@ td, th {
 <tr><th colspan="2">[% date %]</th></tr>
 [%     last_date = date;
      END %]
-<tr><td>[% lift.datetime.strftime('%I:%M %P') %]</td>
-  <td>[% lift.vessel %]<br>([% lift.direction %])</td></tr>
+<tr class="vevent">
+  <td class="dtstart" title="[% lift.datetime %]">[% lift.datetime.strftime('%I:%M %P') %]</td>
+  <td class="summary">[% lift.vessel %]<br>([% lift.direction %])</td>
+</tr>
 [% END;
 %]
 </table>
