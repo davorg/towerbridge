@@ -40,9 +40,12 @@ td, th {
 <tr><th colspan="2">[% date %]</th></tr>
 [%     last_date = date;
      END %]
-<tr class="vevent">
-  <td class="dtstart" title="[% lift.datetime %]">[% lift.datetime.strftime('%I:%M %P') %]</td>
-  <td class="summary">[% lift.vessel %]<br>([% lift.direction %])</td>
+<tr class="event-wrapper" itemscope itemtype="http://schema.org/Event">
+  <div class="event-venue" itemprop="location" itemscope itemtype="http://schema.org/Place">
+    <meta itemprop="name" content="Tower Bridge">
+  </div>
+  <td class="event-date" itemprop="startDate" content="[% lift.datetime %]">[% lift.datetime.strftime('%I:%M %P') %]</td>
+  <td class="event-title" itemprop="name">[% lift.vessel %]<br>([% lift.direction %])</td>
 </tr>
 [% END;
 %]
