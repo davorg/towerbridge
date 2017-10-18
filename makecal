@@ -76,6 +76,11 @@ foreach (@lifts) {
     location   => {
       '@type'  => 'Place',
       'name'   => 'Tower Bridge',
+      address  => {
+        '@type' => 'PostalAddress',
+	streetAddress => 'Tower Bridge Road',
+        addressRegion => 'London',
+      },
     },
     name       => "$lift->{vessel} ($lift->{direction})",
     startDate  => $date->iso8601,
