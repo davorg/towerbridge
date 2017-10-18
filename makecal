@@ -36,7 +36,7 @@ wq('http://www.towerbridge.org.uk/lift-times/')
   ->each(sub { push @lifts, [ map { $_->text } $_[1]->contents ] });
 
 my %seen;
-my (@json, @lift_data);
+my (@json, @lift_data, $json_ld);
 
 foreach (@lifts) {
   my $date = $dt_parser->parse_datetime("$_->[2] $_->[1] $curr_year");
@@ -70,6 +70,16 @@ foreach (@lifts) {
   push @json, { %$lift };
   $lift->{datetime} = $date;
   push @lift_data, $lift;
+  push @$json_ld, {
+    '@context' => 'http;//schema.org',
+    '@type'    => 'Event',
+    location   => {
+      '@type'  => 'Place',
+      'name'   => 'Tower Bridge',
+    },
+    name       => "$lift->{vessel} ($lift->{direction})",
+    startDate  => $date->iso8601,
+  };
 }
 
 
@@ -104,8 +114,11 @@ print $ical_fh $ical->as_string;
 open my $json_fh, '>', 'towerbridge.json' or die $!;
 print $json_fh JSON->new->pretty->encode({ lifts => \@json });
 
+my $ld_str = JSON->new->pretty->encode($json_ld);
+
 my $tt = Template->new;
-$tt->process('index.tt', { lifts => \@lift_data }, 'index.html')
+$tt->process('index.tt', { json_ld => $ld_str,
+		           lifts   => \@lift_data }, 'index.html')
   or die $tt->error;
 
 sub dt2ical {

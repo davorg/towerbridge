@@ -15,6 +15,9 @@
   <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css">
     <title>Tower Bridge Data</title>
+    <script type="application/ld+json">
+[% json_ld %]
+    </script>
   </head>
   <body>
     <h1>Tower Bridge Data</h1>
@@ -29,12 +32,9 @@
   <tr><th colspan="2">[% date %]</th></tr>
 [%     last_date = date;
      END %]
-  <tr class="event-wrapper" itemscope itemtype="http://schema.org/Event">
-    <div class="event-venue" itemprop="location" itemscope itemtype="http://schema.org/Place">
-      <meta itemprop="name" content="Tower Bridge">
-    </div>
-    <td class="event-date" itemprop="startDate" content="[% lift.datetime %]">[% lift.datetime.strftime('%I:%M %P') %]</td>
-    <td class="event-title" itemprop="name">[% lift.vessel %]<br>([% lift.direction %])</td>
+  <tr>
+    <td>[% lift.datetime.strftime('%I:%M %P') %]</td>
+    <td>[% lift.vessel %]<br>([% lift.direction %])</td>
   </tr>
 [% END;
 %]
