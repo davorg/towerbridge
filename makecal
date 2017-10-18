@@ -71,7 +71,7 @@ foreach (@lifts) {
   $lift->{datetime} = $date;
   push @lift_data, $lift;
   push @$json_ld, {
-    '@context' => 'http;//schema.org',
+    '@context' => 'http://schema.org',
     '@type'    => 'Event',
     location   => {
       '@type'  => 'Place',
