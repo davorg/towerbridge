@@ -22,7 +22,6 @@
   </head>
   <body>
     <h1>Tower Bridge Data</h1>
-    <p>Tower Bridge lift data in machine-readable formats.</p>
     <div class="content">
       <h2>Upcoming lifts</h2>
       <div class="data">
@@ -52,6 +51,7 @@
 <!-- Go to www.addthis.com/dashboard to customize your tools -->
     <footer>
       <div class="addthis_native_toolbox"></div>
+      Tower Bridge lift data in machine-readable formats.<br>
       Made by <a href="https://twitter.com/davorg">@davorg</a>.<br>
       Let him know if you would like the data in any other format.<br>
       Data scraped from the
