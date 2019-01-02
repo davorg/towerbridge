@@ -87,6 +87,7 @@ foreach (@lifts) {
     },
     name       => "Tower Bridge lift: $lift->{vessel} ($lift->{direction})",
     startDate  => $date->iso8601,
+    endDate    => $date->add( minutes => 10 )->iso8601,
     description => "Watch Tower Bridge raise as $lift->{vessel} "
                  . "travels $lift->{direction}",
   };
