@@ -89,6 +89,8 @@ foreach (@lifts) {
       '@type' => 'Offer',
       price   => '0.00',
       priceCurrency => 'GBP',
+      availability => 'http://schema.org/InStock',
+      validFrom => '1970-01-01',
     },
     image      => 'towerbridge.jpg',
     name       => "Tower Bridge lift: $lift->{vessel} ($lift->{direction})",
