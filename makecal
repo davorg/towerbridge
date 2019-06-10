@@ -85,6 +85,7 @@ foreach (@lifts) {
 	addressCountry  => 'United Kindgom',
       },
     },
+    image      => 'towerbridge.jpg',
     name       => "Tower Bridge lift: $lift->{vessel} ($lift->{direction})",
     startDate  => $date->iso8601,
     endDate    => $date->add( minutes => 10 )->iso8601,
