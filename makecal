@@ -85,6 +85,11 @@ foreach (@lifts) {
 	addressCountry  => 'United Kindgom',
       },
     },
+    offers     => {
+      '@type' => 'Offer',
+      price   => '0.00',
+      priceCurrency => 'GBP',
+    },
     image      => 'towerbridge.jpg',
     name       => "Tower Bridge lift: $lift->{vessel} ($lift->{direction})",
     startDate  => $date->iso8601,
