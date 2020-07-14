@@ -32,7 +32,7 @@ my $now_ical = dt2ical($now);
 my @lifts;
 
 wq('http://www.towerbridge.org.uk/lift-times/')
-  ->find('table.lined tbody tr')
+  ->find('table.views-table tbody tr')
   ->each(sub { push @lifts, [ map { $_->text } $_[1]->contents ] });
 
 my %seen;
