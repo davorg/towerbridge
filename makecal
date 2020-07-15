@@ -39,14 +39,7 @@ my %seen;
 my (@json, @lift_data, $json_ld);
 
 foreach (@lifts) {
-  my $date = $dt_parser->parse_datetime("$_->[2] $_->[1] $curr_year");
-  # If the month number of this event is less than the current month
-  # number then we've gone to the next year. Increment the year number
-  # and re-calculate.
-  if ($date->mon < $curr_mon) {
-    ++$curr_year;
-    $date = $dt_parser->parse_datetime("$_->[2] $_->[1] $curr_year");
-  }
+  my $date = $dt_parser->parse_datetime("$_->[2] $_->[1]");
 
   # Tower Bridge web site occasionally has duplicates
   next if $seen{$date->epoch}++;
@@ -77,21 +70,21 @@ foreach (@lifts) {
       '@type'  => 'Place',
       'name'   => 'Tower Bridge',
       address  => {
-        '@type' => 'PostalAddress',
-	streetAddress   => 'Tower Bridge Road',
-	addressLocality => 'Southwark',
-	postalCode      => 'SE1 2UP',
+        '@type'         => 'PostalAddress',
+        streetAddress   => 'Tower Bridge Road',
+        addressLocality => 'Southwark',
+        postalCode      => 'SE1 2UP',
         addressRegion   => 'London',
-	addressCountry  => 'United Kindgom',
+        addressCountry  => 'United Kindgom',
       },
     },
     offers     => {
-      '@type' => 'Offer',
-      price   => '0.00',
+      '@type'       => 'Offer',
+      price         => '0.00',
       priceCurrency => 'GBP',
-      availability => 'http://schema.org/InStock',
-      validFrom => '1970-01-01',
-      url     => 'https://towerbridge.dave.org.uk',
+      availability  => 'http://schema.org/InStock',
+      validFrom     => '1970-01-01',
+      url           => 'https://towerbridge.dave.org.uk',
     },
     performer  => {
       '@type'  => 'Organization',
@@ -102,7 +95,7 @@ foreach (@lifts) {
     startDate  => $date->iso8601,
     endDate    => $date->add( minutes => 10 )->iso8601,
     description => "Watch Tower Bridge raise as $lift->{vessel} "
-                 . "travels $lift->{direction}",
+                 . 'travels ' . lc $lift->{direction},
   };
 }
 
