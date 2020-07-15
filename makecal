@@ -16,8 +16,6 @@ use Data::ICal::Entry::TimeZone::Standard;
 use Data::ICal::Entry::TimeZone::Daylight;
 use Template;
 
-my $i = 0;
-
 my $now = DateTime->now(time_zone => 'Europe/London');
 my ($curr_mon, $curr_year) = ($now->month, $now->year);
 
