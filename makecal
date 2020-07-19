@@ -91,6 +91,7 @@ foreach (@lifts) {
     organizer  => {
       '@type'  => 'Organization',
       name     => 'Tower Bridge',
+      url      => 'https://towerbridge.org.uk/',
     },
     image      => 'towerbridge.jpg',
     name       => "Tower Bridge lift: $lift->{vessel} ($lift->{direction})",
