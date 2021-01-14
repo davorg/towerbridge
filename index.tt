@@ -25,6 +25,7 @@
     <div class="content">
       <h2>Upcoming lifts</h2>
       <div class="data">
+[% IF lifts.size -%]
 <table>
 [% last_date = 'Thu, Jan  1 1970';
    FOR lift IN lifts;
@@ -40,6 +41,9 @@
 [% END;
 %]
 </table>
+[% ELSE -%]
+<p>No lifts are currently scheduled.</p>
+[% END -%]
       </div>
 
           <p>Download the data as <a href="/towerbridge.ics">a calendar</a>
