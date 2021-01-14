@@ -19,6 +19,12 @@ use Template;
 my $now = DateTime->now(time_zone => 'Europe/London');
 my ($curr_mon, $curr_year) = ($now->month, $now->year);
 
+my $qry_date_fmt = '%d-%m-%Y';
+my $lift_times_from = $now->strftime($qry_date_fmt);
+my $lift_times_to   = $now->clone->add(years => 1)->strftime($qry_date_fmt);
+
+# print "$lift_times_from -> $lift_times_to\n";
+
 my $ical = Data::ICal->new();
 my $dt_parser = DateTime::Format::Strptime->new(
   time_zone => 'Europe/London',
@@ -29,7 +35,10 @@ my $now_ical = dt2ical($now);
 
 my @lifts;
 
-wq('http://www.towerbridge.org.uk/lift-times/')
+my $url = 'https://www.towerbridge.org.uk/lift-times/';
+my $params = "lift_times_from=$lift_times_from&lift_times_to=$lift_times_to";
+
+wq("$url?$params")
   ->find('table.views-table tbody tr')
   ->each(sub { push @lifts, [ map { $_->text } $_[1]->contents ] });
 
