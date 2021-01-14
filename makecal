@@ -44,6 +44,7 @@ wq("$url?$params")
 
 my %seen;
 my (@json, @lift_data, $json_ld);
+$json_ld = [];
 
 foreach (@lifts) {
   my $date = $dt_parser->parse_datetime("$_->[2] $_->[1]");
