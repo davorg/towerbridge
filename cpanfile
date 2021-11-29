@@ -1,0 +1,11 @@
+requires 'Data::Dumper';
+requires 'DateTime';
+requires 'DateTime::Format::Strptime';
+requires 'Web::Query';
+requires 'JSON';
+requires 'Data::ICal';
+requires 'Data::ICal::Entry::Event';
+requires 'Data::ICal::Entry::TimeZone';
+requires 'Data::ICal::Entry::TimeZone::Standard';
+requires 'Data::ICal::Entry::TimeZone::Daylight';
+requires 'Template';
