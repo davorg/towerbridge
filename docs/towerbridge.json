@@ -2,22 +2,17 @@
    "lifts" : [
       {
          "direction" : "Up river ",
-         "datetime" : "2021-12-16T23:30:00+0000",
-         "vessel" : "Motor Vessel Dutch Master "
-      },
-      {
-         "direction" : "Up river ",
          "datetime" : "2021-12-18T17:45:00+0000",
          "vessel" : "Sailing Barge Will "
       },
       {
-         "direction" : "Down river ",
          "vessel" : "Sailing Barge Will ",
-         "datetime" : "2021-12-18T18:30:00+0000"
+         "datetime" : "2021-12-18T18:30:00+0000",
+         "direction" : "Down river "
       },
       {
-         "vessel" : "Sailing Barge Will ",
          "datetime" : "2021-12-18T21:30:00+0000",
+         "vessel" : "Sailing Barge Will ",
          "direction" : "Up river "
       },
       {
@@ -26,39 +21,39 @@
          "direction" : "Down river "
       },
       {
+         "direction" : "Down river ",
          "vessel" : "Motor Vessel Dutch Master ",
-         "datetime" : "2021-12-19T15:30:00+0000",
-         "direction" : "Down river "
+         "datetime" : "2021-12-19T15:30:00+0000"
       },
       {
-         "direction" : "Up river ",
+         "vessel" : "Paddle Steamer Dixie Queen ",
          "datetime" : "2021-12-31T23:30:00+0000",
-         "vessel" : "Paddle Steamer Dixie Queen "
-      },
-      {
-         "vessel" : "Paddle Steamer Dixie Queen ",
-         "datetime" : "2022-01-01T00:30:00+0000",
-         "direction" : "Down river "
-      },
-      {
-         "direction" : "Up river ",
-         "datetime" : "2022-01-01T01:00:00+0000",
-         "vessel" : "Motor Vessel Dutch Master "
-      },
-      {
-         "direction" : "Up river ",
-         "vessel" : "Paddle Steamer Dixie Queen ",
-         "datetime" : "2022-01-15T18:15:00+0000"
+         "direction" : "Up river "
       },
       {
          "direction" : "Down river ",
-         "datetime" : "2022-01-15T19:15:00+0000",
+         "datetime" : "2022-01-01T00:30:00+0000",
          "vessel" : "Paddle Steamer Dixie Queen "
       },
       {
-         "vessel" : "Paddle Steamer Dixie Queen ",
-         "datetime" : "2022-01-15T21:30:00+0000",
+         "datetime" : "2022-01-01T01:00:00+0000",
+         "vessel" : "Motor Vessel Dutch Master ",
          "direction" : "Up river "
+      },
+      {
+         "vessel" : "Paddle Steamer Dixie Queen ",
+         "datetime" : "2022-01-15T18:15:00+0000",
+         "direction" : "Up river "
+      },
+      {
+         "vessel" : "Paddle Steamer Dixie Queen ",
+         "datetime" : "2022-01-15T19:15:00+0000",
+         "direction" : "Down river "
+      },
+      {
+         "direction" : "Up river ",
+         "datetime" : "2022-01-15T21:30:00+0000",
+         "vessel" : "Paddle Steamer Dixie Queen "
       },
       {
          "vessel" : "Paddle Steamer Dixie Queen ",
