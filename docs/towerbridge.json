@@ -6,24 +6,24 @@
          "datetime" : "2022-01-22T07:30:00+0000"
       },
       {
+         "datetime" : "2022-01-22T08:00:00+0000",
          "direction" : "Up river ",
-         "vessel" : "Maintenance Lift ",
-         "datetime" : "2022-01-22T08:00:00+0000"
+         "vessel" : "Maintenance Lift "
       },
       {
-         "datetime" : "2022-01-23T07:30:00+0000",
          "vessel" : "Maintenance Lift ",
-         "direction" : "Down river "
+         "direction" : "Down river ",
+         "datetime" : "2022-01-23T07:30:00+0000"
       },
       {
-         "direction" : "Up river ",
          "vessel" : "Maintenance Lift ",
+         "direction" : "Up river ",
          "datetime" : "2022-01-23T08:00:00+0000"
       },
       {
+         "datetime" : "2022-01-23T08:30:00+0000",
          "direction" : "Down river ",
-         "vessel" : "Maintenance Lift ",
-         "datetime" : "2022-01-23T08:30:00+0000"
+         "vessel" : "Maintenance Lift "
       },
       {
          "datetime" : "2022-01-23T09:00:00+0000",
@@ -31,9 +31,9 @@
          "direction" : "Up river "
       },
       {
+         "datetime" : "2022-01-27T20:30:00+0000",
          "direction" : "Down river ",
-         "vessel" : "Motor Vessel Dutch Master ",
-         "datetime" : "2022-01-27T20:30:00+0000"
+         "vessel" : "Motor Vessel Dutch Master "
       }
    ]
 }
