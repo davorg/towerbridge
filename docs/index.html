@@ -19,44 +19,44 @@
     <script type="application/ld+json">
 [
    {
-      "eventStatus" : "http://schema.org/EventScheduled",
-      "location" : {
-         "address" : {
-            "streetAddress" : "Tower Bridge Road",
-            "addressLocality" : "Southwark",
-            "addressRegion" : "London",
-            "@type" : "PostalAddress",
-            "addressCountry" : "United Kindgom",
-            "postalCode" : "SE1 2UP"
-         },
-         "name" : "Tower Bridge",
-         "@type" : "Place"
+      "performer" : {
+         "@type" : "Organization",
+         "name" : "Tower Bridge"
       },
-      "@context" : "http://schema.org",
+      "startDate" : "2022-01-27T20:30:00",
+      "description" : "Watch Tower Bridge raise as Motor Vessel Dutch Master  travels down river ",
+      "offers" : {
+         "@type" : "Offer",
+         "priceCurrency" : "GBP",
+         "validFrom" : "1970-01-01",
+         "url" : "https://towerbridge.dave.org.uk",
+         "price" : "0.00",
+         "availability" : "http://schema.org/InStock"
+      },
+      "eventAttendanceMode" : "http://schema.org/OfflineEventAttendanceMode",
       "name" : "Tower Bridge lift: Motor Vessel Dutch Master  (Down river )",
+      "@context" : "http://schema.org",
+      "@type" : "Event",
       "organizer" : {
          "url" : "https://towerbridge.org.uk/",
          "@type" : "Organization",
          "name" : "Tower Bridge"
       },
-      "startDate" : "2022-01-27T20:30:00",
-      "@type" : "Event",
-      "eventAttendanceMode" : "http://schema.org/OfflineEventAttendanceMode",
-      "description" : "Watch Tower Bridge raise as Motor Vessel Dutch Master  travels down river ",
       "image" : "towerbridge.jpg",
-      "performer" : {
-         "@type" : "Organization",
-         "name" : "Tower Bridge"
+      "location" : {
+         "address" : {
+            "addressCountry" : "United Kindgom",
+            "addressRegion" : "London",
+            "addressLocality" : "Southwark",
+            "postalCode" : "SE1 2UP",
+            "@type" : "PostalAddress",
+            "streetAddress" : "Tower Bridge Road"
+         },
+         "name" : "Tower Bridge",
+         "@type" : "Place"
       },
-      "offers" : {
-         "url" : "https://towerbridge.dave.org.uk",
-         "price" : "0.00",
-         "validFrom" : "1970-01-01",
-         "@type" : "Offer",
-         "priceCurrency" : "GBP",
-         "availability" : "http://schema.org/InStock"
-      },
-      "endDate" : "2022-01-27T20:40:00"
+      "endDate" : "2022-01-27T20:40:00",
+      "eventStatus" : "http://schema.org/EventScheduled"
    }
 ]
 
