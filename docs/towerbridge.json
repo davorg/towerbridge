@@ -1,24 +1,14 @@
 {
    "lifts" : [
       {
-         "direction" : "Up river ",
-         "vessel" : "Maintenance Lift ",
-         "datetime" : "2022-02-17T14:00:00+0000"
-      },
-      {
-         "direction" : "Up river ",
-         "datetime" : "2022-02-17T16:30:00+0000",
-         "vessel" : "Maintenance Lift "
-      },
-      {
-         "datetime" : "2022-04-02T14:00:00+0100",
          "vessel" : "Sailing Barge Will ",
+         "datetime" : "2022-04-02T14:00:00+0100",
          "direction" : "Up river "
       },
       {
          "vessel" : "Sailing Barge Will ",
-         "datetime" : "2022-04-02T14:45:00+0100",
-         "direction" : "Down river "
+         "direction" : "Down river ",
+         "datetime" : "2022-04-02T14:45:00+0100"
       },
       {
          "vessel" : "Sailing Barge Will ",
@@ -26,8 +16,8 @@
          "direction" : "Up river "
       },
       {
-         "direction" : "Down river ",
          "datetime" : "2022-04-02T18:45:00+0100",
+         "direction" : "Down river ",
          "vessel" : "Sailing Barge Will "
       },
       {
@@ -36,89 +26,89 @@
          "vessel" : "Paddle Steamer Dixie Queen "
       },
       {
-         "vessel" : "Paddle Steamer Dixie Queen ",
+         "direction" : "Down river ",
          "datetime" : "2022-05-06T15:30:00+0100",
-         "direction" : "Down river "
-      },
-      {
-         "direction" : "Up river ",
-         "vessel" : "Paddle Steamer Dixie Queen ",
-         "datetime" : "2022-05-06T17:30:00+0100"
-      },
-      {
-         "direction" : "Down river ",
-         "vessel" : "Paddle Steamer Dixie Queen ",
-         "datetime" : "2022-05-06T18:15:00+0100"
-      },
-      {
-         "direction" : "Up river ",
-         "vessel" : "Sailing Barge Will ",
-         "datetime" : "2022-05-19T16:15:00+0100"
-      },
-      {
-         "direction" : "Down river ",
-         "datetime" : "2022-05-19T17:00:00+0100",
-         "vessel" : "Sailing Barge Will "
-      },
-      {
-         "datetime" : "2022-05-20T16:15:00+0100",
-         "vessel" : "Sailing Barge Will ",
-         "direction" : "Up river "
-      },
-      {
-         "direction" : "Down river ",
-         "vessel" : "Sailing Barge Will ",
-         "datetime" : "2022-05-20T17:00:00+0100"
-      },
-      {
-         "direction" : "Up river ",
-         "datetime" : "2022-05-27T16:15:00+0100",
-         "vessel" : "Sailing Barge Will "
-      },
-      {
-         "vessel" : "Sailing Barge Will ",
-         "datetime" : "2022-05-27T17:00:00+0100",
-         "direction" : "Down river "
-      },
-      {
-         "vessel" : "Sailing Barge Will ",
-         "datetime" : "2022-07-02T11:30:00+0100",
-         "direction" : "Up river "
-      },
-      {
-         "vessel" : "Sailing Barge Will ",
-         "datetime" : "2022-07-02T12:15:00+0100",
-         "direction" : "Down river "
-      },
-      {
-         "direction" : "Up river ",
-         "vessel" : "Sailing Barge Will ",
-         "datetime" : "2022-07-02T17:30:00+0100"
-      },
-      {
-         "direction" : "Down river ",
-         "vessel" : "Sailing Barge Will ",
-         "datetime" : "2022-07-02T18:15:00+0100"
-      },
-      {
-         "direction" : "Up river ",
-         "vessel" : "Paddle Steamer Dixie Queen ",
-         "datetime" : "2022-07-09T12:30:00+0100"
-      },
-      {
-         "vessel" : "Paddle Steamer Dixie Queen ",
-         "datetime" : "2022-07-09T13:15:00+0100",
-         "direction" : "Down river "
-      },
-      {
-         "direction" : "Up river ",
-         "datetime" : "2022-07-09T19:30:00+0100",
          "vessel" : "Paddle Steamer Dixie Queen "
       },
       {
+         "datetime" : "2022-05-06T17:30:00+0100",
+         "direction" : "Up river ",
+         "vessel" : "Paddle Steamer Dixie Queen "
+      },
+      {
+         "datetime" : "2022-05-06T18:15:00+0100",
          "direction" : "Down river ",
+         "vessel" : "Paddle Steamer Dixie Queen "
+      },
+      {
+         "datetime" : "2022-05-19T16:15:00+0100",
+         "direction" : "Up river ",
+         "vessel" : "Sailing Barge Will "
+      },
+      {
+         "vessel" : "Sailing Barge Will ",
+         "datetime" : "2022-05-19T17:00:00+0100",
+         "direction" : "Down river "
+      },
+      {
+         "direction" : "Up river ",
+         "datetime" : "2022-05-20T16:15:00+0100",
+         "vessel" : "Sailing Barge Will "
+      },
+      {
+         "vessel" : "Sailing Barge Will ",
+         "direction" : "Down river ",
+         "datetime" : "2022-05-20T17:00:00+0100"
+      },
+      {
+         "datetime" : "2022-05-27T16:15:00+0100",
+         "direction" : "Up river ",
+         "vessel" : "Sailing Barge Will "
+      },
+      {
+         "datetime" : "2022-05-27T17:00:00+0100",
+         "direction" : "Down river ",
+         "vessel" : "Sailing Barge Will "
+      },
+      {
+         "vessel" : "Sailing Barge Will ",
+         "direction" : "Up river ",
+         "datetime" : "2022-07-02T11:30:00+0100"
+      },
+      {
+         "datetime" : "2022-07-02T12:15:00+0100",
+         "direction" : "Down river ",
+         "vessel" : "Sailing Barge Will "
+      },
+      {
+         "vessel" : "Sailing Barge Will ",
+         "direction" : "Up river ",
+         "datetime" : "2022-07-02T17:30:00+0100"
+      },
+      {
+         "vessel" : "Sailing Barge Will ",
+         "direction" : "Down river ",
+         "datetime" : "2022-07-02T18:15:00+0100"
+      },
+      {
          "vessel" : "Paddle Steamer Dixie Queen ",
-         "datetime" : "2022-07-09T20:15:00+0100"
+         "datetime" : "2022-07-09T12:30:00+0100",
+         "direction" : "Up river "
+      },
+      {
+         "datetime" : "2022-07-09T13:15:00+0100",
+         "direction" : "Down river ",
+         "vessel" : "Paddle Steamer Dixie Queen "
+      },
+      {
+         "vessel" : "Paddle Steamer Dixie Queen ",
+         "direction" : "Up river ",
+         "datetime" : "2022-07-09T19:30:00+0100"
+      },
+      {
+         "vessel" : "Paddle Steamer Dixie Queen ",
+         "datetime" : "2022-07-09T20:15:00+0100",
+         "direction" : "Down river "
       }
    ]
 }
