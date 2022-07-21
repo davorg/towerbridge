@@ -10,6 +10,9 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    
+    container:
+      image: perldocker/perl-tester:5.36
 
     steps:
     - name: Checkout
