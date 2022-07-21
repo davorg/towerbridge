@@ -7,6 +7,9 @@ use 5.010;
 use JSON;
 use Template;
 
+use FindBin '$Bin';
+use lib "$Bin/lib";
+
 use TowerBridge;
 use TowerBridge::Lift;
 
