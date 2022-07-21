@@ -20,12 +20,12 @@ jobs:
 
     - name: Install libraries
       run: |
-          sudo apt-get update -y
-          sudo apt-get install -y cpanminus
+          apt-get update -y
+          apt-get install -y cpanminus
 
     - name: Install modules
       run: |
-          sudo cpanm --installdeps --notest .
+          cpanm --installdeps --notest .
 
     - name: Create pages
       run: |
