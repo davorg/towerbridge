@@ -16,6 +16,8 @@ use Data::ICal::Entry::TimeZone::Standard;
 use Data::ICal::Entry::TimeZone::Daylight;
 use Template;
 
+use TowerBridge::Lift;
+
 my $dir = shift || 'docs';
 
 my $now = DateTime->now(time_zone => 'Europe/London');
@@ -33,8 +35,6 @@ my $dt_parser = DateTime::Format::Strptime->new(
   pattern => '%H:%M %d %b %Y',
 );
 
-my $now_ical = dt2ical($now);
-
 my @lifts;
 
 my $url = 'https://www.towerbridge.org.uk/lift-times/';
@@ -49,30 +49,19 @@ my (@json, @lift_data, $json_ld);
 $json_ld = [];
 
 foreach (@lifts) {
-  my $date = $dt_parser->parse_datetime("$_->[2] $_->[1]");
+  my $l = TowerBridge::Lift->new({
+    datetime  => $dt_parser->parse_datetime("$_->[2] $_->[1]"),
+    vessel    => $_->[3],
+    direction => $_->[4],
+  });
 
   # Tower Bridge web site occasionally has duplicates
-  next if $seen{$date->epoch}++;
+  next if $seen{$l->datetime->epoch}++;
 
-  my $event = Data::ICal::Entry::Event->new();
-  $event->add_properties(
-    summary => 'Tower Bridge Lift',
-    description => "$_->[3] ($_->[4])",
-    dtstart => dt2ical($date),
-    duration => 'PT10M',
-    dtstamp => $now_ical,
-    uid => $date->epoch . '@towerbridge.dave.org.uk',
-  );
-  $ical->add_entry($event);
+  $ical->add_entry($l->ical_event);
 
-  my $lift;
-  $lift->{datetime}  = $date->iso8601 . $date->strftime('%z');
-  $lift->{vessel}    = $_->[3];
-  $lift->{direction} = $_->[4];
-
-  push @json, { %$lift };
-  $lift->{datetime} = $date;
-  push @lift_data, $lift;
+  push @json, $l->json;
+  push @lift_data, $l;
   push @$json_ld, {
     '@context' => 'http://schema.org',
     '@type'    => 'Event',
@@ -106,11 +95,11 @@ foreach (@lifts) {
       url      => 'https://towerbridge.org.uk/',
     },
     image      => 'towerbridge.jpg',
-    name       => "Tower Bridge lift: $lift->{vessel} ($lift->{direction})",
-    startDate  => $date->iso8601,
-    endDate    => $date->add( minutes => 10 )->iso8601,
-    description => "Watch Tower Bridge raise as $lift->{vessel} "
-                 . 'travels ' . lc $lift->{direction},
+    name       => 'Tower Bridge lift: ' . $l->vessel . ' (' . $l->direction . ')',
+    startDate  => $l->datetime->iso8601,
+    endDate    => $l->datetime->add( minutes => 10 )->iso8601,
+    description => 'Watch Tower Bridge raise as ' . $l->vessel . ' '
+                 . 'travels ' . lc $l->direction,
     eventStatus => 'http://schema.org/EventScheduled',
     eventAttendanceMode => 'http://schema.org/OfflineEventAttendanceMode',
   };
@@ -145,10 +134,12 @@ $ical->add_entry($tz);
 open my $ical_fh, '>', "$dir/towerbridge.ics" or die $!;
 print $ical_fh $ical->as_string;
 
-open my $json_fh, '>', "$dir/towerbridge.json" or die $!;
-print $json_fh JSON->new->pretty->encode({ lifts => \@json });
+my $json_encoder = JSON->new->pretty->canonical;
 
-my $ld_str = JSON->new->pretty->encode($json_ld);
+open my $json_fh, '>', "$dir/towerbridge.json" or die $!;
+print $json_fh $json_encoder->encode({ lifts => \@json });
+
+my $ld_str = $json_encoder->encode($json_ld);
 
 my $tt = Template->new(OUTPUT_PATH => $dir);;
 $tt->process('index.tt', { json_ld => $ld_str,
@@ -156,8 +147,3 @@ $tt->process('index.tt', { json_ld => $ld_str,
 			   builtat => $now, }, 'index.html')
   or die $tt->error;
 
-sub dt2ical {
-  my ($dt) = @_;
-
-  return [ $dt->strftime('%Y%m%dT%H%M%S'), { TZID => 'Europe/London' } ];
-}
