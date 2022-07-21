@@ -146,9 +146,9 @@ open my $ical_fh, '>', "$dir/towerbridge.ics" or die $!;
 print $ical_fh $ical->as_string;
 
 open my $json_fh, '>', "$dir/towerbridge.json" or die $!;
-print $json_fh JSON->new->pretty->encode({ lifts => \@json });
+print $json_fh JSON->new->pretty->canonical->encode({ lifts => \@json });
 
-my $ld_str = JSON->new->pretty->encode($json_ld);
+my $ld_str = JSON->new->pretty->canonical->encode($json_ld);
 
 my $tt = Template->new(OUTPUT_PATH => $dir);;
 $tt->process('index.tt', { json_ld => $ld_str,
