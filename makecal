@@ -152,7 +152,8 @@ my $ld_str = JSON->new->pretty->encode($json_ld);
 
 my $tt = Template->new(OUTPUT_PATH => $dir);;
 $tt->process('index.tt', { json_ld => $ld_str,
-		           lifts   => \@lift_data }, 'index.html')
+		           lifts   => \@lift_data,
+			   builtat => $now, }, 'index.html')
   or die $tt->error;
 
 sub dt2ical {
