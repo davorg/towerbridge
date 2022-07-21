@@ -4,146 +4,19 @@ use strict;
 use warnings;
 use 5.010;
 
-use Data::Dumper;
-use DateTime;
-use DateTime::Format::Strptime;
-use Web::Query;
 use JSON;
-use Data::ICal;
-use Data::ICal::Entry::Event;
-use Data::ICal::Entry::TimeZone;
-use Data::ICal::Entry::TimeZone::Standard;
-use Data::ICal::Entry::TimeZone::Daylight;
 use Template;
 
+use TowerBridge;
 use TowerBridge::Lift;
 
-my $dir = shift || 'docs';
+my $app = TowerBridge->new;
 
-my $now = DateTime->now(time_zone => 'Europe/London');
-my ($curr_mon, $curr_year) = ($now->month, $now->year);
+open my $ical_fh, '>', $app->ics_path or die $!;
+print $ical_fh $app->ical->as_string;
 
-my $qry_date_fmt = '%d-%m-%Y';
-my $lift_times_from = $now->strftime($qry_date_fmt);
-my $lift_times_to   = $now->clone->add(years => 1)->strftime($qry_date_fmt);
+open my $json_fh, '>', $app->json_path or die $!;
+print $json_fh $app->simple_json;
 
-# print "$lift_times_from -> $lift_times_to\n";
-
-my $ical = Data::ICal->new();
-my $dt_parser = DateTime::Format::Strptime->new(
-  time_zone => 'Europe/London',
-  pattern => '%H:%M %d %b %Y',
-);
-
-my @lifts;
-
-my $url = 'https://www.towerbridge.org.uk/lift-times/';
-my $params = "lift_times_from=$lift_times_from&lift_times_to=$lift_times_to";
-
-wq("$url?$params")
-  ->find('table.views-table tbody tr')
-  ->each(sub { push @lifts, [ map { $_->text } $_[1]->contents ] });
-
-my %seen;
-my (@json, @lift_data, $json_ld);
-$json_ld = [];
-
-foreach (@lifts) {
-  my $l = TowerBridge::Lift->new({
-    datetime  => $dt_parser->parse_datetime("$_->[2] $_->[1]"),
-    vessel    => $_->[3],
-    direction => $_->[4],
-  });
-
-  # Tower Bridge web site occasionally has duplicates
-  next if $seen{$l->datetime->epoch}++;
-
-  $ical->add_entry($l->ical_event);
-
-  push @json, $l->json;
-  push @lift_data, $l;
-  push @$json_ld, {
-    '@context' => 'http://schema.org',
-    '@type'    => 'Event',
-    location   => {
-      '@type'  => 'Place',
-      'name'   => 'Tower Bridge',
-      address  => {
-        '@type'         => 'PostalAddress',
-        streetAddress   => 'Tower Bridge Road',
-        addressLocality => 'Southwark',
-        postalCode      => 'SE1 2UP',
-        addressRegion   => 'London',
-        addressCountry  => 'United Kindgom',
-      },
-    },
-    offers     => {
-      '@type'       => 'Offer',
-      price         => '0.00',
-      priceCurrency => 'GBP',
-      availability  => 'http://schema.org/InStock',
-      validFrom     => '1970-01-01',
-      url           => 'https://towerbridge.dave.org.uk',
-    },
-    performer  => {
-      '@type'  => 'Organization',
-      name     => 'Tower Bridge',
-    },
-    organizer  => {
-      '@type'  => 'Organization',
-      name     => 'Tower Bridge',
-      url      => 'https://towerbridge.org.uk/',
-    },
-    image      => 'towerbridge.jpg',
-    name       => 'Tower Bridge lift: ' . $l->vessel . ' (' . $l->direction . ')',
-    startDate  => $l->datetime->iso8601,
-    endDate    => $l->datetime->add( minutes => 10 )->iso8601,
-    description => 'Watch Tower Bridge raise as ' . $l->vessel . ' '
-                 . 'travels ' . lc $l->direction,
-    eventStatus => 'http://schema.org/EventScheduled',
-    eventAttendanceMode => 'http://schema.org/OfflineEventAttendanceMode',
-  };
-}
-
-
-my $tz = Data::ICal::Entry::TimeZone->new;
-$tz->add_properties(
-  tzid => 'Europe/London',
-);
-
-my $std = Data::ICal::Entry::TimeZone::Standard->new;
-$std->add_properties(
-  dtstart => '19710101T020000',
-  tzoffsetto => '+0000',
-  tzoffsetfrom => '+0100',
-  rrule => 'FREQ=YEARLY;WKST=MO;INTERVAL=1;BYMONTH=10;BYDAY=-1SU',
-);
-$tz->add_entry($std);
-
-my $day = Data::ICal::Entry::TimeZone::Daylight->new;
-$day->add_properties(
-  dtstart => '19710101T010000',
-  tzoffsetto => '+0100',
-  tzoffsetfrom => '+0000',
-  rrule => 'FREQ=YEARLY;WKST=MO;INTERVAL=1;BYMONTH=3;BYDAY=-1SU',
-);
-$tz->add_entry($day);
-
-$ical->add_entry($tz);
-
-open my $ical_fh, '>', "$dir/towerbridge.ics" or die $!;
-print $ical_fh $ical->as_string;
-
-my $json_encoder = JSON->new->pretty->canonical;
-
-open my $json_fh, '>', "$dir/towerbridge.json" or die $!;
-print $json_fh $json_encoder->encode({ lifts => \@json });
-
-my $ld_str = $json_encoder->encode($json_ld);
-
-my $tt = Template->new(OUTPUT_PATH => $dir);;
-$tt->process('index.tt', { json_ld => $ld_str,
-		           lifts   => \@lift_data,
-			   builtat => $now, }, 'index.html')
-  or die $tt->error;
+$app->make_html;
 

@@ -23,6 +23,22 @@ has direction => (
   is  => 'ro',
 );
 
+sub name {
+  my $self = shift;
+
+  return 'Tower Bridge lift: '
+    . $self->vessel
+    . ' (' . $self->direction . ')';
+}
+
+sub description {
+  my $self = shift;
+
+  return 'Watch Tower Bridge raise as '
+    . $self->vessel . ' '
+    . 'travels ' . lc $self->direction
+}
+
 sub json {
   my $self = shift;
 
@@ -30,6 +46,51 @@ sub json {
     datetime  => $self->datetime->iso8601 . $self->datetime->strftime('%z'),
     vessel    => $self->vessel,
     direction => $self->direction,
+  };
+}
+
+sub json_ld {
+  my $self = shift;
+
+  return {
+    '@context' => 'http://schema.org',
+    '@type'    => 'Event',
+    location   => {
+      '@type'  => 'Place',
+      'name'   => 'Tower Bridge',
+      address  => {
+        '@type'         => 'PostalAddress',
+        streetAddress   => 'Tower Bridge Road',
+        addressLocality => 'Southwark',
+        postalCode      => 'SE1 2UP',
+        addressRegion   => 'London',
+        addressCountry  => 'United Kindgom',
+      },
+    },
+    offers     => {
+      '@type'       => 'Offer',
+      price         => '0.00',
+      priceCurrency => 'GBP',
+      availability  => 'http://schema.org/InStock',
+      validFrom     => '1970-01-01',
+      url           => 'https://towerbridge.dave.org.uk',
+    },
+    performer  => {
+      '@type'  => 'Organization',
+      name     => 'Tower Bridge',
+    },
+    organizer  => {
+      '@type'  => 'Organization',
+      name     => 'Tower Bridge',
+      url      => 'https://towerbridge.org.uk/',
+    },
+    image      => 'towerbridge.jpg',
+    name       => $self->name,
+    startDate  => $self->datetime->iso8601,
+    endDate    => $self->datetime->add( minutes => 10 )->iso8601,
+    description => $self->description,
+    eventStatus => 'http://schema.org/EventScheduled',
+    eventAttendanceMode => 'http://schema.org/OfflineEventAttendanceMode',
   };
 }
 
