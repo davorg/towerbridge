@@ -14,6 +14,8 @@ use Data::ICal::Entry::TimeZone::Standard;
 use Data::ICal::Entry::TimeZone::Daylight;
 use Web::Query;
 
+use TowerBridge::Lift;
+
 has dir => (
   is => 'lazy',
   builder => '_build_dir',
@@ -174,9 +176,11 @@ has simple_json => (
 sub _build_simple_json {
   my $self = shift;
 
-  return $self->json_encoder->encode([ map {
-    $_->json
-  } @{ $self->lifts } ]);
+  my @json_lifts = map { $_->json } @{ $self->lifts };
+
+  return $self->json_encoder->encode({
+    lifts => \@json_lifts,
+  });
 }
 
 has json_ld => (
