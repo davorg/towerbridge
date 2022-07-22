@@ -1,15 +1,5 @@
 [
    {
-      "datetime" : "2022-07-21T19:30:00+0100",
-      "direction" : "Up river",
-      "vessel" : "Sailing Barge Will"
-   },
-   {
-      "datetime" : "2022-07-21T20:15:00+0100",
-      "direction" : "Down river",
-      "vessel" : "Sailing Barge Will"
-   },
-   {
       "datetime" : "2022-07-22T17:15:00+0100",
       "direction" : "Up river",
       "vessel" : "Sailing Barge Will"
@@ -246,6 +236,16 @@
    },
    {
       "datetime" : "2022-08-21T18:30:00+0100",
+      "direction" : "Down river",
+      "vessel" : "Paddle Steamer Dixie Queen"
+   },
+   {
+      "datetime" : "2022-08-21T21:30:00+0100",
+      "direction" : "Up river",
+      "vessel" : "Paddle Steamer Dixie Queen"
+   },
+   {
+      "datetime" : "2022-08-21T22:15:00+0100",
       "direction" : "Down river",
       "vessel" : "Paddle Steamer Dixie Queen"
    }
