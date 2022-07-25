@@ -1,16 +1,6 @@
 {
    "lifts" : [
       {
-         "datetime" : "2022-07-24T10:30:00+0100",
-         "direction" : "Up river",
-         "vessel" : "Motor Yacht Stardust"
-      },
-      {
-         "datetime" : "2022-07-24T11:00:00+0100",
-         "direction" : "Down river",
-         "vessel" : "Motor Yacht Stardust"
-      },
-      {
          "datetime" : "2022-07-26T19:00:00+0100",
          "direction" : "Up river",
          "vessel" : "Paddle Steamer Dixie Queen"
@@ -247,6 +237,16 @@
       },
       {
          "datetime" : "2022-08-25T19:15:00+0100",
+         "direction" : "Down river",
+         "vessel" : "Paddle Steamer Dixie Queen"
+      },
+      {
+         "datetime" : "2022-08-25T23:15:00+0100",
+         "direction" : "Up river",
+         "vessel" : "Paddle Steamer Dixie Queen"
+      },
+      {
+         "datetime" : "2022-08-26T00:15:00+0100",
          "direction" : "Down river",
          "vessel" : "Paddle Steamer Dixie Queen"
       }
