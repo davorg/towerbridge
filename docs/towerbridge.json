@@ -26,11 +26,6 @@
          "vessel" : "Motor Vessel Dutch Master"
       },
       {
-         "datetime" : "2022-08-07T00:00:00+0100",
-         "direction" : "Down river",
-         "vessel" : "Motor Vessel Dutch Master"
-      },
-      {
          "datetime" : "2022-08-07T12:30:00+0100",
          "direction" : "Up river",
          "vessel" : "Paddle Steamer Dixie Queen"
@@ -49,6 +44,11 @@
          "datetime" : "2022-08-07T17:15:00+0100",
          "direction" : "Down river",
          "vessel" : "Paddle Steamer Dixie Queen"
+      },
+      {
+         "datetime" : "2022-08-07T19:45:00+0100",
+         "direction" : "Down river",
+         "vessel" : "Motor Vessel Dutch Master"
       },
       {
          "datetime" : "2022-08-08T08:30:00+0100",
