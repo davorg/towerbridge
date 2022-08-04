@@ -1,11 +1,6 @@
 {
    "lifts" : [
       {
-         "datetime" : "2022-08-03T19:00:00+0100",
-         "direction" : "Up river",
-         "vessel" : "Sailing Barge Gladys"
-      },
-      {
          "datetime" : "2022-08-04T10:00:00+0100",
          "direction" : "Down river",
          "vessel" : "Sailing Barge Gladys"
@@ -19,6 +14,21 @@
          "datetime" : "2022-08-05T19:45:00+0100",
          "direction" : "Down river",
          "vessel" : "Motor Vessel Dutch Master"
+      },
+      {
+         "datetime" : "2022-08-06T11:45:00+0100",
+         "direction" : "Down river",
+         "vessel" : "Sailing Barge Gladys"
+      },
+      {
+         "datetime" : "2022-08-06T16:30:00+0100",
+         "direction" : "Up river",
+         "vessel" : "Sailing Barge Gladys"
+      },
+      {
+         "datetime" : "2022-08-06T18:15:00+0100",
+         "direction" : "Down river",
+         "vessel" : "Sailing Barge Gladys"
       },
       {
          "datetime" : "2022-08-06T19:30:00+0100",
@@ -141,9 +151,29 @@
          "vessel" : "Motor Vessel Dutch Master"
       },
       {
+         "datetime" : "2022-08-20T10:00:00+0100",
+         "direction" : "Up river",
+         "vessel" : "Sailing Barge Gladys"
+      },
+      {
+         "datetime" : "2022-08-20T18:45:00+0100",
+         "direction" : "Down river",
+         "vessel" : "Sailing Barge Gladys"
+      },
+      {
          "datetime" : "2022-08-20T19:45:00+0100",
          "direction" : "Down river",
          "vessel" : "Motor Vessel Dutch Master"
+      },
+      {
+         "datetime" : "2022-08-20T22:00:00+0100",
+         "direction" : "Up river",
+         "vessel" : "Sailing Barge Gladys"
+      },
+      {
+         "datetime" : "2022-08-21T07:30:00+0100",
+         "direction" : "Down river",
+         "vessel" : "Sailing Barge Gladys"
       },
       {
          "datetime" : "2022-08-21T17:30:00+0100",
@@ -166,6 +196,11 @@
          "vessel" : "Paddle Steamer Dixie Queen"
       },
       {
+         "datetime" : "2022-08-24T14:45:00+0100",
+         "direction" : "Up river",
+         "vessel" : "Sailing Barge Gladys"
+      },
+      {
          "datetime" : "2022-08-24T18:45:00+0100",
          "direction" : "Down river",
          "vessel" : "Sailing Barge Gladys"
@@ -173,6 +208,11 @@
       {
          "datetime" : "2022-08-24T22:00:00+0100",
          "direction" : "Up river",
+         "vessel" : "Sailing Barge Gladys"
+      },
+      {
+         "datetime" : "2022-08-25T11:15:00+0100",
+         "direction" : "Down river",
          "vessel" : "Sailing Barge Gladys"
       },
       {
@@ -209,46 +249,6 @@
          "datetime" : "2022-08-27T13:15:00+0100",
          "direction" : "Down river",
          "vessel" : "Motor Vessel Dutch Master"
-      },
-      {
-         "datetime" : "2022-08-28T13:45:00+0100",
-         "direction" : "Down river",
-         "vessel" : "Motor Vessel Dutch Master"
-      },
-      {
-         "datetime" : "2022-08-28T14:30:00+0100",
-         "direction" : "Up river",
-         "vessel" : "Sailing Vessel PippykIIn"
-      },
-      {
-         "datetime" : "2022-08-28T15:00:00+0100",
-         "direction" : "Down river",
-         "vessel" : "Sailing Vessel PippykIIn"
-      },
-      {
-         "datetime" : "2022-08-30T15:40:00+0100",
-         "direction" : "Up river",
-         "vessel" : "Sailing Barge Gladys"
-      },
-      {
-         "datetime" : "2022-08-30T19:15:00+0100",
-         "direction" : "Down river",
-         "vessel" : "Sailing Barge Gladys"
-      },
-      {
-         "datetime" : "2022-08-30T22:00:00+0100",
-         "direction" : "Up river",
-         "vessel" : "Sailing Barge Gladys"
-      },
-      {
-         "datetime" : "2022-08-31T18:45:00+0100",
-         "direction" : "Up river",
-         "vessel" : "Paddle Steamer Dixie Queen"
-      },
-      {
-         "datetime" : "2022-08-31T19:45:00+0100",
-         "direction" : "Down river",
-         "vessel" : "Paddle Steamer Dixie Queen"
       }
    ]
 }
