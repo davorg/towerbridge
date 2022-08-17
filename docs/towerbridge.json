@@ -1,6 +1,11 @@
 {
    "lifts" : [
       {
+         "datetime" : "2022-08-17T15:00:00+0100",
+         "direction" : "Up river",
+         "vessel" : "Maintenance Lift"
+      },
+      {
          "datetime" : "2022-08-17T19:45:00+0100",
          "direction" : "Down river",
          "vessel" : "Motor Vessel Dutch Master"
@@ -243,11 +248,6 @@
       {
          "datetime" : "2022-09-06T18:45:00+0100",
          "direction" : "Down river",
-         "vessel" : "Sailing Barge Gladys"
-      },
-      {
-         "datetime" : "2022-09-06T22:00:00+0100",
-         "direction" : "Up river",
          "vessel" : "Sailing Barge Gladys"
       }
    ]
