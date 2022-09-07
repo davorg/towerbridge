@@ -1,16 +1,6 @@
 {
    "lifts" : [
       {
-         "datetime" : "2022-09-06T18:45:00+0100",
-         "direction" : "Down river",
-         "vessel" : "Sailing Barge Gladys"
-      },
-      {
-         "datetime" : "2022-09-06T22:00:00+0100",
-         "direction" : "Up river",
-         "vessel" : "Sailing Barge Gladys"
-      },
-      {
          "datetime" : "2022-09-07T18:30:00+0100",
          "direction" : "Up river",
          "vessel" : "Paddle Steamer Dixie Queen"
@@ -247,6 +237,16 @@
       },
       {
          "datetime" : "2022-09-19T19:15:00+0100",
+         "direction" : "Down river",
+         "vessel" : "Sailing Barge Gladys"
+      },
+      {
+         "datetime" : "2022-09-19T22:15:00+0100",
+         "direction" : "Up river",
+         "vessel" : "Sailing Barge Gladys"
+      },
+      {
+         "datetime" : "2022-09-20T18:45:00+0100",
          "direction" : "Down river",
          "vessel" : "Sailing Barge Gladys"
       }
