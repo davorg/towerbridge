@@ -1,31 +1,6 @@
 {
    "lifts" : [
       {
-         "datetime" : "2022-09-13T10:00:00+0100",
-         "direction" : "Up river",
-         "vessel" : "Sailing Barge Will"
-      },
-      {
-         "datetime" : "2022-09-13T10:45:00+0100",
-         "direction" : "Down river",
-         "vessel" : "Sailing Barge Will"
-      },
-      {
-         "datetime" : "2022-09-13T11:30:00+0100",
-         "direction" : "Down river",
-         "vessel" : "Sailing Barge Gladys"
-      },
-      {
-         "datetime" : "2022-09-13T14:30:00+0100",
-         "direction" : "Up river",
-         "vessel" : "Sailing Barge Will"
-      },
-      {
-         "datetime" : "2022-09-13T15:15:00+0100",
-         "direction" : "Down river",
-         "vessel" : "Sailing Barge Will"
-      },
-      {
          "datetime" : "2022-09-14T17:30:00+0100",
          "direction" : "Up river",
          "vessel" : "Sailing Barge Will"
@@ -54,6 +29,11 @@
          "datetime" : "2022-09-15T15:15:00+0100",
          "direction" : "Down river",
          "vessel" : "Paddle Steamer Dixie Queen"
+      },
+      {
+         "datetime" : "2022-09-15T16:45:00+0100",
+         "direction" : "Up river",
+         "vessel" : "Sailing Barge Gladys"
       },
       {
          "datetime" : "2022-09-15T17:30:00+0100",
@@ -131,12 +111,12 @@
          "vessel" : "Sailing Barge Gladys"
       },
       {
-         "datetime" : "2022-09-19T19:15:00+0100",
+         "datetime" : "2022-09-18T06:15:00+0100",
          "direction" : "Down river",
          "vessel" : "Sailing Barge Gladys"
       },
       {
-         "datetime" : "2022-09-19T22:15:00+0100",
+         "datetime" : "2022-09-20T11:30:00+0100",
          "direction" : "Up river",
          "vessel" : "Sailing Barge Gladys"
       },
@@ -159,6 +139,16 @@
          "datetime" : "2022-09-21T16:15:00+0100",
          "direction" : "Down river",
          "vessel" : "Sailing Barge Will"
+      },
+      {
+         "datetime" : "2022-09-21T18:45:00+0100",
+         "direction" : "Down river",
+         "vessel" : "Sailing Barge Gladys"
+      },
+      {
+         "datetime" : "2022-09-21T22:00:00+0100",
+         "direction" : "Up river",
+         "vessel" : "Sailing Barge Gladys"
       },
       {
          "datetime" : "2022-09-22T10:45:00+0100",
@@ -247,6 +237,16 @@
       },
       {
          "datetime" : "2022-09-25T19:20:00+0100",
+         "direction" : "Up river",
+         "vessel" : "Paddle Steamer Waverley"
+      },
+      {
+         "datetime" : "2022-09-26T09:40:00+0100",
+         "direction" : "Down river",
+         "vessel" : "Paddle Steamer Waverley"
+      },
+      {
+         "datetime" : "2022-09-26T19:50:00+0100",
          "direction" : "Up river",
          "vessel" : "Paddle Steamer Waverley"
       }
