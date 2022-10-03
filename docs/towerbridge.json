@@ -1,16 +1,6 @@
 {
    "lifts" : [
       {
-         "datetime" : "2022-10-03T06:30:00+0100",
-         "direction" : "Up river",
-         "vessel" : "Marine Tugboat RT Ambition"
-      },
-      {
-         "datetime" : "2022-10-03T06:30:00+0100",
-         "direction" : "Up river",
-         "vessel" : "Marine Tugboat RT Peter"
-      },
-      {
          "datetime" : "2022-10-03T07:15:00+0100",
          "direction" : "Down river",
          "vessel" : "Vessel"
@@ -247,6 +237,16 @@
       },
       {
          "datetime" : "2022-10-13T18:00:00+0100",
+         "direction" : "Up river",
+         "vessel" : "Sailing Barge Will"
+      },
+      {
+         "datetime" : "2022-10-13T18:45:00+0100",
+         "direction" : "Down river",
+         "vessel" : "Sailing Barge Will"
+      },
+      {
+         "datetime" : "2022-10-15T10:30:00+0100",
          "direction" : "Up river",
          "vessel" : "Sailing Barge Will"
       }
