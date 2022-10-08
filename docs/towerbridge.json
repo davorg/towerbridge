@@ -1,21 +1,6 @@
 {
    "lifts" : [
       {
-         "datetime" : "2022-10-07T10:30:00+0100",
-         "direction" : "Down river",
-         "vessel" : "Sailing Barge Gladys"
-      },
-      {
-         "datetime" : "2022-10-07T17:15:00+0100",
-         "direction" : "Up river",
-         "vessel" : "Paddle Steamer Waverley"
-      },
-      {
-         "datetime" : "2022-10-07T17:45:00+0100",
-         "direction" : "Down river",
-         "vessel" : "Paddle Steamer Waverley"
-      },
-      {
          "datetime" : "2022-10-08T08:50:00+0100",
          "direction" : "Up river",
          "vessel" : "Paddle Steamer Waverley"
@@ -249,6 +234,21 @@
          "datetime" : "2022-10-29T16:30:00+0100",
          "direction" : "Down river",
          "vessel" : "Motor Vessel Dutch Master"
+      },
+      {
+         "datetime" : "2022-11-03T16:30:00+0000",
+         "direction" : "Up river",
+         "vessel" : "Sailing Barge Will"
+      },
+      {
+         "datetime" : "2022-11-03T17:15:00+0000",
+         "direction" : "Down river",
+         "vessel" : "Sailing Barge Will"
+      },
+      {
+         "datetime" : "2022-11-11T10:20:00+0000",
+         "direction" : "Up river",
+         "vessel" : "Motor Vessel Havengore"
       }
    ]
 }
