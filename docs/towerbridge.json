@@ -1,11 +1,6 @@
 {
    "lifts" : [
       {
-         "datetime" : "2022-10-29T16:30:00+0100",
-         "direction" : "Down river",
-         "vessel" : "Motor Vessel Dutch Master"
-      },
-      {
          "datetime" : "2022-11-11T10:20:00+0000",
          "direction" : "Up river",
          "vessel" : "Motor Vessel Havengore"
