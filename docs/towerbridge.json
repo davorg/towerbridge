@@ -1,11 +1,6 @@
 {
    "lifts" : [
       {
-         "datetime" : "2022-11-10T15:15:00+0000",
-         "direction" : "Up river",
-         "vessel" : "Vessel"
-      },
-      {
          "datetime" : "2022-11-11T10:20:00+0000",
          "direction" : "Up river",
          "vessel" : "Motor Vessel Havengore"
@@ -248,6 +243,11 @@
       {
          "datetime" : "2022-12-28T10:30:00+0000",
          "direction" : "Up river",
+         "vessel" : "Sailing Barge Will"
+      },
+      {
+         "datetime" : "2022-12-28T11:15:00+0000",
+         "direction" : "Down river",
          "vessel" : "Sailing Barge Will"
       }
    ]
