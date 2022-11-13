@@ -1,66 +1,6 @@
 {
    "lifts" : [
       {
-         "datetime" : "2022-11-12T07:30:00+0000",
-         "direction" : "Up river",
-         "vessel" : "Maintenance Lift"
-      },
-      {
-         "datetime" : "2022-11-12T08:00:00+0000",
-         "direction" : "Up river",
-         "vessel" : "Maintenance Lift"
-      },
-      {
-         "datetime" : "2022-11-12T08:30:00+0000",
-         "direction" : "Up river",
-         "vessel" : "Maintenance Lift"
-      },
-      {
-         "datetime" : "2022-11-12T09:00:00+0000",
-         "direction" : "Up river",
-         "vessel" : "Maintenance Lift"
-      },
-      {
-         "datetime" : "2022-11-12T18:15:00+0000",
-         "direction" : "Up river",
-         "vessel" : "Sailing Barge Will"
-      },
-      {
-         "datetime" : "2022-11-12T18:15:00+0000",
-         "direction" : "Up river",
-         "vessel" : "Paddle Steamer Dixie Queen"
-      },
-      {
-         "datetime" : "2022-11-12T19:00:00+0000",
-         "direction" : "Down river",
-         "vessel" : "Sailing Barge Will"
-      },
-      {
-         "datetime" : "2022-11-12T19:45:00+0000",
-         "direction" : "Down river",
-         "vessel" : "Paddle Steamer Dixie Queen"
-      },
-      {
-         "datetime" : "2022-11-12T22:00:00+0000",
-         "direction" : "Up river",
-         "vessel" : "Sailing Barge Will"
-      },
-      {
-         "datetime" : "2022-11-12T22:45:00+0000",
-         "direction" : "Down river",
-         "vessel" : "Sailing Barge Will"
-      },
-      {
-         "datetime" : "2022-11-12T22:45:00+0000",
-         "direction" : "Up river",
-         "vessel" : "Paddle Steamer Dixie Queen"
-      },
-      {
-         "datetime" : "2022-11-12T23:30:00+0000",
-         "direction" : "Down river",
-         "vessel" : "Paddle Steamer Dixie Queen"
-      },
-      {
          "datetime" : "2022-11-15T05:15:00+0000",
          "direction" : "Down river",
          "vessel" : "Vessel"
