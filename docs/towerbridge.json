@@ -1,11 +1,6 @@
 {
    "lifts" : [
       {
-         "datetime" : "2022-11-15T05:15:00+0000",
-         "direction" : "Down river",
-         "vessel" : "Vessel"
-      },
-      {
          "datetime" : "2022-11-16T11:00:00+0000",
          "direction" : "Up river",
          "vessel" : "Maintenance Lift"
@@ -19,6 +14,11 @@
          "datetime" : "2022-11-18T19:30:00+0000",
          "direction" : "Down river",
          "vessel" : "Paddle Steamer Dixie Queen"
+      },
+      {
+         "datetime" : "2022-11-18T20:30:00+0000",
+         "direction" : "Down river",
+         "vessel" : "Motor Vessel Dutch Master"
       },
       {
          "datetime" : "2022-11-18T22:30:00+0000",
@@ -49,6 +49,11 @@
          "datetime" : "2022-11-19T16:15:00+0000",
          "direction" : "Down river",
          "vessel" : "Sailing Barge Will"
+      },
+      {
+         "datetime" : "2022-11-19T20:30:00+0000",
+         "direction" : "Down river",
+         "vessel" : "Motor Vessel Dutch Master"
       },
       {
          "datetime" : "2022-12-03T18:00:00+0000",
