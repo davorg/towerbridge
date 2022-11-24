@@ -1,6 +1,16 @@
 {
    "lifts" : [
       {
+         "datetime" : "2022-12-01T16:45:00+0000",
+         "direction" : "Up river",
+         "vessel" : "Sailing Barge Will"
+      },
+      {
+         "datetime" : "2022-12-01T17:30:00+0000",
+         "direction" : "Down river",
+         "vessel" : "Sailing Barge Will"
+      },
+      {
          "datetime" : "2022-12-03T18:00:00+0000",
          "direction" : "Up river",
          "vessel" : "Paddle Steamer Dixie Queen"
@@ -49,6 +59,16 @@
          "datetime" : "2022-12-10T00:45:00+0000",
          "direction" : "Down river",
          "vessel" : "Paddle Steamer Dixie Queen"
+      },
+      {
+         "datetime" : "2022-12-10T09:30:00+0000",
+         "direction" : "Up river",
+         "vessel" : "Sailing Barge Will"
+      },
+      {
+         "datetime" : "2022-12-10T10:15:00+0000",
+         "direction" : "Down river",
+         "vessel" : "Sailing Barge Will"
       },
       {
          "datetime" : "2022-12-11T12:30:00+0000",
