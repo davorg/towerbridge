@@ -31,6 +31,16 @@
          "vessel" : "Paddle Steamer Dixie Queen"
       },
       {
+         "datetime" : "2022-12-07T17:45:00+0000",
+         "direction" : "Up river",
+         "vessel" : "Paddle Steamer Dixie Queen"
+      },
+      {
+         "datetime" : "2022-12-07T18:45:00+0000",
+         "direction" : "Down river",
+         "vessel" : "Paddle Steamer Dixie Queen"
+      },
+      {
          "datetime" : "2022-12-09T16:30:00+0000",
          "direction" : "Up river",
          "vessel" : "Sailing Barge Will"
@@ -126,17 +136,17 @@
          "vessel" : "Sailing Barge Will"
       },
       {
-         "datetime" : "2022-12-23T12:45:00+0000",
+         "datetime" : "2022-12-23T12:30:00+0000",
          "direction" : "Down river",
          "vessel" : "Sailing Barge Will"
       },
       {
-         "datetime" : "2022-12-23T18:30:00+0000",
+         "datetime" : "2022-12-23T17:30:00+0000",
          "direction" : "Up river",
          "vessel" : "Sailing Barge Will"
       },
       {
-         "datetime" : "2022-12-23T19:15:00+0000",
+         "datetime" : "2022-12-23T18:15:00+0000",
          "direction" : "Down river",
          "vessel" : "Sailing Barge Will"
       },
