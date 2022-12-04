@@ -1,26 +1,6 @@
 {
    "lifts" : [
       {
-         "datetime" : "2022-12-03T18:00:00+0000",
-         "direction" : "Up river",
-         "vessel" : "Paddle Steamer Dixie Queen"
-      },
-      {
-         "datetime" : "2022-12-03T18:45:00+0000",
-         "direction" : "Down river",
-         "vessel" : "Paddle Steamer Dixie Queen"
-      },
-      {
-         "datetime" : "2022-12-03T22:30:00+0000",
-         "direction" : "Up river",
-         "vessel" : "Paddle Steamer Dixie Queen"
-      },
-      {
-         "datetime" : "2022-12-03T23:15:00+0000",
-         "direction" : "Down river",
-         "vessel" : "Paddle Steamer Dixie Queen"
-      },
-      {
          "datetime" : "2022-12-07T17:45:00+0000",
          "direction" : "Up river",
          "vessel" : "Paddle Steamer Dixie Queen"
