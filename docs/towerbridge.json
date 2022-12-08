@@ -1,21 +1,6 @@
 {
    "lifts" : [
       {
-         "datetime" : "2022-12-07T14:00:00+0000",
-         "direction" : "Up river",
-         "vessel" : "Maintenance Lift"
-      },
-      {
-         "datetime" : "2022-12-07T20:00:00+0000",
-         "direction" : "Up river",
-         "vessel" : "Paddle Steamer Dixie Queen"
-      },
-      {
-         "datetime" : "2022-12-07T20:45:00+0000",
-         "direction" : "Down river",
-         "vessel" : "Paddle Steamer Dixie Queen"
-      },
-      {
          "datetime" : "2022-12-08T12:00:00+0000",
          "direction" : "Up river",
          "vessel" : "Sailing Barge Adieu"
