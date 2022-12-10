@@ -1,61 +1,6 @@
 {
    "lifts" : [
       {
-         "datetime" : "2022-12-09T15:00:00+0000",
-         "direction" : "Up river",
-         "vessel" : "Marine Tugboat (MTS) RT Ambition"
-      },
-      {
-         "datetime" : "2022-12-09T15:00:00+0000",
-         "direction" : "Up river",
-         "vessel" : "Marine Tugboat RT Peter"
-      },
-      {
-         "datetime" : "2022-12-09T15:00:00+0000",
-         "direction" : "Up river",
-         "vessel" : "Vessel"
-      },
-      {
-         "datetime" : "2022-12-09T15:45:00+0000",
-         "direction" : "Down river",
-         "vessel" : "Marine Tugboat (MTS) RT Ambition"
-      },
-      {
-         "datetime" : "2022-12-09T15:45:00+0000",
-         "direction" : "Down river",
-         "vessel" : "Marine Tugboat RT Peter"
-      },
-      {
-         "datetime" : "2022-12-09T16:30:00+0000",
-         "direction" : "Up river",
-         "vessel" : "Sailing Barge Will"
-      },
-      {
-         "datetime" : "2022-12-09T17:15:00+0000",
-         "direction" : "Down river",
-         "vessel" : "Sailing Barge Will"
-      },
-      {
-         "datetime" : "2022-12-09T19:00:00+0000",
-         "direction" : "Up river",
-         "vessel" : "Paddle Steamer Dixie Queen"
-      },
-      {
-         "datetime" : "2022-12-09T19:45:00+0000",
-         "direction" : "Down river",
-         "vessel" : "Paddle Steamer Dixie Queen"
-      },
-      {
-         "datetime" : "2022-12-10T00:01:00+0000",
-         "direction" : "Up river",
-         "vessel" : "Paddle Steamer Dixie Queen"
-      },
-      {
-         "datetime" : "2022-12-10T00:45:00+0000",
-         "direction" : "Down river",
-         "vessel" : "Paddle Steamer Dixie Queen"
-      },
-      {
          "datetime" : "2022-12-10T09:30:00+0000",
          "direction" : "Up river",
          "vessel" : "Sailing Barge Will"
