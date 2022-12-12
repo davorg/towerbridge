@@ -1,26 +1,6 @@
 {
    "lifts" : [
       {
-         "datetime" : "2022-12-11T12:30:00+0000",
-         "direction" : "Up river",
-         "vessel" : "Paddle Steamer Dixie Queen"
-      },
-      {
-         "datetime" : "2022-12-11T13:30:00+0000",
-         "direction" : "Down river",
-         "vessel" : "Paddle Steamer Dixie Queen"
-      },
-      {
-         "datetime" : "2022-12-11T17:30:00+0000",
-         "direction" : "Up river",
-         "vessel" : "Paddle Steamer Dixie Queen"
-      },
-      {
-         "datetime" : "2022-12-11T18:15:00+0000",
-         "direction" : "Down river",
-         "vessel" : "Paddle Steamer Dixie Queen"
-      },
-      {
          "datetime" : "2022-12-12T15:45:00+0000",
          "direction" : "Up river",
          "vessel" : "Marine Tugboat (MTS) RT Ambition"
