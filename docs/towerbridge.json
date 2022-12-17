@@ -1,26 +1,6 @@
 {
    "lifts" : [
       {
-         "datetime" : "2022-12-16T19:15:00+0000",
-         "direction" : "Up river",
-         "vessel" : "Vessel"
-      },
-      {
-         "datetime" : "2022-12-16T19:15:00+0000",
-         "direction" : "Up river",
-         "vessel" : "Marine Tugboat RT Peter"
-      },
-      {
-         "datetime" : "2022-12-16T19:45:00+0000",
-         "direction" : "Down river",
-         "vessel" : "Motor Vessel Dutch Master"
-      },
-      {
-         "datetime" : "2022-12-16T19:45:00+0000",
-         "direction" : "Down river",
-         "vessel" : "Marine Tugboat RT Peter"
-      },
-      {
          "datetime" : "2022-12-17T20:30:00+0000",
          "direction" : "Down river",
          "vessel" : "Motor Vessel Dutch Master"
