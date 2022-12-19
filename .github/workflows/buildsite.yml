@@ -35,6 +35,7 @@ jobs:
     - name: Commit new page
       if: github.repository == 'davorg/towerbridge'
       run: |
+        git config --global --add safe.directory /__w/towerbridge/towerbridge
         GIT_STATUS=$(git status --porcelain)
         echo $GIT_STATUS
         git config --global user.name 'Automated Workflow'
