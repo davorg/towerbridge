@@ -1,21 +1,6 @@
 {
    "lifts" : [
       {
-         "datetime" : "2022-12-20T10:15:00+0000",
-         "direction" : "Up river",
-         "vessel" : "Marine Tugboat RT Peter"
-      },
-      {
-         "datetime" : "2022-12-20T11:00:00+0000",
-         "direction" : "Down river",
-         "vessel" : "Marine Tugboat RT Peter"
-      },
-      {
-         "datetime" : "2022-12-20T11:00:00+0000",
-         "direction" : "Down river",
-         "vessel" : "Vessel"
-      },
-      {
          "datetime" : "2022-12-21T20:30:00+0000",
          "direction" : "Up river",
          "vessel" : "Motor Yacht Phoenix"
