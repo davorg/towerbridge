@@ -1,16 +1,6 @@
 {
    "lifts" : [
       {
-         "datetime" : "2022-12-21T20:30:00+0000",
-         "direction" : "Up river",
-         "vessel" : "Motor Yacht Phoenix"
-      },
-      {
-         "datetime" : "2022-12-21T21:00:00+0000",
-         "direction" : "Down river",
-         "vessel" : "Motor Yacht Phoenix"
-      },
-      {
          "datetime" : "2022-12-23T11:45:00+0000",
          "direction" : "Up river",
          "vessel" : "Sailing Barge Will"
