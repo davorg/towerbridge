@@ -1,26 +1,6 @@
 {
    "lifts" : [
       {
-         "datetime" : "2022-12-23T11:45:00+0000",
-         "direction" : "Up river",
-         "vessel" : "Sailing Barge Will"
-      },
-      {
-         "datetime" : "2022-12-23T12:30:00+0000",
-         "direction" : "Down river",
-         "vessel" : "Sailing Barge Will"
-      },
-      {
-         "datetime" : "2022-12-23T17:30:00+0000",
-         "direction" : "Up river",
-         "vessel" : "Sailing Barge Will"
-      },
-      {
-         "datetime" : "2022-12-23T18:15:00+0000",
-         "direction" : "Down river",
-         "vessel" : "Sailing Barge Will"
-      },
-      {
          "datetime" : "2022-12-28T10:30:00+0000",
          "direction" : "Up river",
          "vessel" : "Sailing Barge Will"
