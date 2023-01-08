@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-SEGCF782QH"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-SEGCF782QH');
+    </script>
     <!-- Built at: [% builtat %] -->
     <meta name="description" content="Providing details about Tower Bridge's lift schedule in machine-readable formats." />
     <meta property="og:title" content="Tower Bridge Data" />
@@ -64,15 +73,5 @@
       site</a>.<br>
       Code <a href="https://github.com/davorg/towerbridge">on Github</a>.
     </footer>
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-56332-59', 'auto');
-  ga('send', 'pageview');
-
-</script>
   </body>
 </html>
