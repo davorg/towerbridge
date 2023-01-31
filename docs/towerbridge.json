@@ -1,6 +1,16 @@
 {
    "lifts" : [
       {
+         "datetime" : "2023-01-31T22:00:00+0000",
+         "direction" : "Up river",
+         "vessel" : "Maintenance Lift"
+      },
+      {
+         "datetime" : "2023-01-31T23:30:00+0000",
+         "direction" : "Up river",
+         "vessel" : "Maintenance Lift"
+      },
+      {
          "datetime" : "2023-02-11T13:00:00+0000",
          "direction" : "Up river",
          "vessel" : "Paddle Steamer Dixie Queen"
