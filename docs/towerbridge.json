@@ -1,21 +1,6 @@
 {
    "lifts" : [
       {
-         "datetime" : "2023-02-10T10:00:00+0000",
-         "direction" : "Up river",
-         "vessel" : "Maintenance Lift"
-      },
-      {
-         "datetime" : "2023-02-10T16:15:00+0000",
-         "direction" : "Up river",
-         "vessel" : "High Speed Craft HST Frances"
-      },
-      {
-         "datetime" : "2023-02-10T16:45:00+0000",
-         "direction" : "Down river",
-         "vessel" : "High Speed Craft HST Frances"
-      },
-      {
          "datetime" : "2023-02-11T13:00:00+0000",
          "direction" : "Up river",
          "vessel" : "Paddle Steamer Dixie Queen"
