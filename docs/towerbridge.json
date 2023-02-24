@@ -1,16 +1,6 @@
 {
    "lifts" : [
       {
-         "datetime" : "2023-02-23T15:45:00+0000",
-         "direction" : "Up river",
-         "vessel" : "Vessel"
-      },
-      {
-         "datetime" : "2023-02-23T16:15:00+0000",
-         "direction" : "Down river",
-         "vessel" : "Marine Tugboat RT Peter"
-      },
-      {
          "datetime" : "2023-02-28T04:45:00+0000",
          "direction" : "Down river",
          "vessel" : "Vessel"
