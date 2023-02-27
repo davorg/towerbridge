@@ -1,11 +1,6 @@
 {
    "lifts" : [
       {
-         "datetime" : "2023-02-26T08:00:00+0000",
-         "direction" : "Up river",
-         "vessel" : "Maintenance Lift"
-      },
-      {
          "datetime" : "2023-02-28T04:45:00+0000",
          "direction" : "Down river",
          "vessel" : "Vessel"
