@@ -1,11 +1,6 @@
 {
    "lifts" : [
       {
-         "datetime" : "2023-03-12T07:30:00+0000",
-         "direction" : "Up river",
-         "vessel" : "Maintenance Lift"
-      },
-      {
          "datetime" : "2023-03-28T04:45:00+0100",
          "direction" : "Up river",
          "vessel" : "Motor Tanker Sir John Fisher"
@@ -248,6 +243,11 @@
       {
          "datetime" : "2023-07-14T16:00:00+0100",
          "direction" : "Up river",
+         "vessel" : "Sailing Barge Will"
+      },
+      {
+         "datetime" : "2023-07-14T16:45:00+0100",
+         "direction" : "Down river",
          "vessel" : "Sailing Barge Will"
       }
    ]
