@@ -3,6 +3,11 @@ name: Generate web page
 on:
   push:
     branches: '*'
+    paths:
+      - 'lib/*'
+      - 'index.tt'
+      - 'makecal'
+      - 'cpanfile'
   schedule:
     - cron: '22 5 * * *'
   workflow_dispatch:
@@ -44,9 +49,28 @@ jobs:
         if [ "$GIT_STATUS" != "" ]; then git commit -m "Automated Web page generation"; fi
         if [ "$GIT_STATUS" != "" ]; then git push; fi
 
+    - name: Update pages artifact
+      uses: actions/upload-pages-artifact@v1
+      with:
+        path: docs/
+
     - name: Archive build logs
       uses: actions/upload-artifact@v3
       with:
         name: towerbridge.log
         path: ./towerbridge.log
         retention-days: 3
+
+  deploy:
+    needs: build
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v1
