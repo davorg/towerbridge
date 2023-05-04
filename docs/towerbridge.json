@@ -1,21 +1,6 @@
 {
    "lifts" : [
       {
-         "datetime" : "2023-05-03T15:20:00+0100",
-         "direction" : "Up river",
-         "vessel" : "Sailing Barge Gladys"
-      },
-      {
-         "datetime" : "2023-05-03T18:45:00+0100",
-         "direction" : "Down river",
-         "vessel" : "Sailing Barge Gladys"
-      },
-      {
-         "datetime" : "2023-05-03T22:00:00+0100",
-         "direction" : "Up river",
-         "vessel" : "Sailing Barge Gladys"
-      },
-      {
          "datetime" : "2023-05-04T11:45:00+0100",
          "direction" : "Down river",
          "vessel" : "Sailing Barge Gladys"
@@ -34,6 +19,11 @@
          "datetime" : "2023-05-05T00:45:00+0100",
          "direction" : "Up river",
          "vessel" : "Motor Vessel Le Dumont D'Urville"
+      },
+      {
+         "datetime" : "2023-05-05T00:45:00+0100",
+         "direction" : "Up river",
+         "vessel" : "Marine Tugboat RT Peter"
       },
       {
          "datetime" : "2023-05-05T01:30:00+0100",
@@ -66,9 +56,34 @@
          "vessel" : "Motor Vessel Le Dumont D'Urville"
       },
       {
+         "datetime" : "2023-05-06T14:00:00+0100",
+         "direction" : "Up river",
+         "vessel" : "Vessel"
+      },
+      {
+         "datetime" : "2023-05-06T15:30:00+0100",
+         "direction" : "Down river",
+         "vessel" : "Vessel"
+      },
+      {
          "datetime" : "2023-05-07T04:15:00+0100",
          "direction" : "Up river",
          "vessel" : "Motor Ship Hamburg"
+      },
+      {
+         "datetime" : "2023-05-07T04:15:00+0100",
+         "direction" : "Up river",
+         "vessel" : "Marine Tugboat RT Peter"
+      },
+      {
+         "datetime" : "2023-05-07T05:00:00+0100",
+         "direction" : "Down river",
+         "vessel" : "Marine Tugboat RT Peter"
+      },
+      {
+         "datetime" : "2023-05-08T16:15:00+0100",
+         "direction" : "Up river",
+         "vessel" : "Marine Tugboat RT Peter"
       },
       {
          "datetime" : "2023-05-08T16:45:00+0100",
@@ -76,9 +91,19 @@
          "vessel" : "Motor Ship Hamburg"
       },
       {
+         "datetime" : "2023-05-08T16:45:00+0100",
+         "direction" : "Down river",
+         "vessel" : "Marine Tugboat RT Peter"
+      },
+      {
          "datetime" : "2023-05-10T06:15:00+0100",
          "direction" : "Up river",
          "vessel" : "Motor Vessel Silver Wind"
+      },
+      {
+         "datetime" : "2023-05-10T06:15:00+0100",
+         "direction" : "Up river",
+         "vessel" : "Marine Tugboat Svitzer Adira"
       },
       {
          "datetime" : "2023-05-10T07:00:00+0100",
@@ -94,6 +119,11 @@
          "datetime" : "2023-05-12T06:45:00+0100",
          "direction" : "Down river",
          "vessel" : "Motor Vessel Silver Wind"
+      },
+      {
+         "datetime" : "2023-05-12T06:45:00+0100",
+         "direction" : "Down river",
+         "vessel" : "Marine Tugboat Svitzer Adira"
       },
       {
          "datetime" : "2023-05-13T10:30:00+0100",
@@ -151,7 +181,7 @@
          "vessel" : "Sailing Barge Will"
       },
       {
-         "datetime" : "2023-05-21T16:15:00+0100",
+         "datetime" : "2023-05-21T16:00:00+0100",
          "direction" : "Down river",
          "vessel" : "Vessel"
       },
@@ -219,36 +249,6 @@
          "datetime" : "2023-06-03T12:45:00+0100",
          "direction" : "Up river",
          "vessel" : "Sailing Barge Will"
-      },
-      {
-         "datetime" : "2023-06-03T13:30:00+0100",
-         "direction" : "Down river",
-         "vessel" : "Sailing Barge Will"
-      },
-      {
-         "datetime" : "2023-06-10T14:30:00+0100",
-         "direction" : "Up river",
-         "vessel" : "Sailing Barge Will"
-      },
-      {
-         "datetime" : "2023-06-10T15:15:00+0100",
-         "direction" : "Down river",
-         "vessel" : "Sailing Barge Will"
-      },
-      {
-         "datetime" : "2023-06-14T18:45:00+0100",
-         "direction" : "Down river",
-         "vessel" : "Sailing Barge Gladys"
-      },
-      {
-         "datetime" : "2023-06-14T22:00:00+0100",
-         "direction" : "Up river",
-         "vessel" : "Sailing Barge Gladys"
-      },
-      {
-         "datetime" : "2023-06-16T05:15:00+0100",
-         "direction" : "Up river",
-         "vessel" : "Motor Vessel NG Explorer"
       }
    ]
 }
