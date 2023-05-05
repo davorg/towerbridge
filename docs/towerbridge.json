@@ -1,36 +1,6 @@
 {
    "lifts" : [
       {
-         "datetime" : "2023-05-04T11:45:00+0100",
-         "direction" : "Down river",
-         "vessel" : "Sailing Barge Gladys"
-      },
-      {
-         "datetime" : "2023-05-04T12:15:00+0100",
-         "direction" : "Down river",
-         "vessel" : "Motor Vessel Le Bellot"
-      },
-      {
-         "datetime" : "2023-05-04T16:00:00+0100",
-         "direction" : "Up river",
-         "vessel" : "Sailing Barge Gladys"
-      },
-      {
-         "datetime" : "2023-05-05T00:45:00+0100",
-         "direction" : "Up river",
-         "vessel" : "Motor Vessel Le Dumont D'Urville"
-      },
-      {
-         "datetime" : "2023-05-05T00:45:00+0100",
-         "direction" : "Up river",
-         "vessel" : "Marine Tugboat RT Peter"
-      },
-      {
-         "datetime" : "2023-05-05T01:30:00+0100",
-         "direction" : "Down river",
-         "vessel" : "Marine Tugboat RT Peter"
-      },
-      {
          "datetime" : "2023-05-05T10:00:00+0100",
          "direction" : "Up river",
          "vessel" : "Maintenance Lift"
@@ -111,9 +81,39 @@
          "vessel" : "Marine Tugboat Svitzer Adira"
       },
       {
+         "datetime" : "2023-05-10T17:00:00+0100",
+         "direction" : "Up river",
+         "vessel" : "Sailing Barge Gladys"
+      },
+      {
+         "datetime" : "2023-05-10T18:45:00+0100",
+         "direction" : "Down river",
+         "vessel" : "Sailing Barge Gladys"
+      },
+      {
+         "datetime" : "2023-05-10T22:00:00+0100",
+         "direction" : "Up river",
+         "vessel" : "Sailing Barge Gladys"
+      },
+      {
+         "datetime" : "2023-05-11T18:45:00+0100",
+         "direction" : "Down river",
+         "vessel" : "Sailing Barge Gladys"
+      },
+      {
+         "datetime" : "2023-05-11T22:00:00+0100",
+         "direction" : "Up river",
+         "vessel" : "Sailing Barge Gladys"
+      },
+      {
          "datetime" : "2023-05-12T06:00:00+0100",
          "direction" : "Up river",
          "vessel" : "Marine Tugboat Svitzer Adira"
+      },
+      {
+         "datetime" : "2023-05-12T06:00:00+0100",
+         "direction" : "Down river",
+         "vessel" : "Sailing Barge Gladys"
       },
       {
          "datetime" : "2023-05-12T06:45:00+0100",
@@ -161,6 +161,16 @@
          "vessel" : "Sailing Barge Will"
       },
       {
+         "datetime" : "2023-05-20T11:45:00+0100",
+         "direction" : "Down river",
+         "vessel" : "Sailing Barge Gladys"
+      },
+      {
+         "datetime" : "2023-05-20T15:00:00+0100",
+         "direction" : "Up river",
+         "vessel" : "Sailing Barge Gladys"
+      },
+      {
          "datetime" : "2023-05-20T15:30:00+0100",
          "direction" : "Up river",
          "vessel" : "Sailing Barge Will"
@@ -169,6 +179,11 @@
          "datetime" : "2023-05-20T16:15:00+0100",
          "direction" : "Down river",
          "vessel" : "Sailing Barge Will"
+      },
+      {
+         "datetime" : "2023-05-20T16:15:00+0100",
+         "direction" : "Down river",
+         "vessel" : "Sailing Barge Gladys"
       },
       {
          "datetime" : "2023-05-20T20:30:00+0100",
@@ -234,21 +249,6 @@
          "datetime" : "2023-05-27T19:30:00+0100",
          "direction" : "Down river",
          "vessel" : "Motor Vessel Dutch Master"
-      },
-      {
-         "datetime" : "2023-05-28T19:15:00+0100",
-         "direction" : "Up river",
-         "vessel" : "Motor Vessel Le Champlain"
-      },
-      {
-         "datetime" : "2023-05-29T21:45:00+0100",
-         "direction" : "Down river",
-         "vessel" : "Motor Vessel Le Champlain"
-      },
-      {
-         "datetime" : "2023-06-03T12:45:00+0100",
-         "direction" : "Up river",
-         "vessel" : "Sailing Barge Will"
       }
    ]
 }
