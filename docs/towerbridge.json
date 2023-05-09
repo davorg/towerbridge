@@ -1,21 +1,6 @@
 {
    "lifts" : [
       {
-         "datetime" : "2023-05-08T16:15:00+0100",
-         "direction" : "Up river",
-         "vessel" : "Marine Tugboat RT Peter"
-      },
-      {
-         "datetime" : "2023-05-08T16:45:00+0100",
-         "direction" : "Down river",
-         "vessel" : "Motor Ship Hamburg"
-      },
-      {
-         "datetime" : "2023-05-08T16:45:00+0100",
-         "direction" : "Down river",
-         "vessel" : "Marine Tugboat RT Peter"
-      },
-      {
          "datetime" : "2023-05-10T06:15:00+0100",
          "direction" : "Up river",
          "vessel" : "Motor Vessel Silver Wind"
@@ -44,6 +29,11 @@
          "datetime" : "2023-05-10T22:00:00+0100",
          "direction" : "Up river",
          "vessel" : "Sailing Barge Gladys"
+      },
+      {
+         "datetime" : "2023-05-11T10:30:00+0100",
+         "direction" : "Up river",
+         "vessel" : "Maintenance Lift"
       },
       {
          "datetime" : "2023-05-11T18:45:00+0100",
@@ -76,12 +66,7 @@
          "vessel" : "Marine Tugboat Svitzer Adira"
       },
       {
-         "datetime" : "2023-05-13T10:30:00+0100",
-         "direction" : "Up river",
-         "vessel" : "Maintenance Lift"
-      },
-      {
-         "datetime" : "2023-05-16T10:30:00+0100",
+         "datetime" : "2023-05-18T09:30:00+0100",
          "direction" : "Up river",
          "vessel" : "Maintenance Lift"
       },
@@ -196,6 +181,11 @@
          "vessel" : "Maintenance Lift"
       },
       {
+         "datetime" : "2023-05-26T10:30:00+0100",
+         "direction" : "Up river",
+         "vessel" : "Maintenance Lift"
+      },
+      {
          "datetime" : "2023-05-27T19:30:00+0100",
          "direction" : "Down river",
          "vessel" : "Motor Vessel Dutch Master"
@@ -209,6 +199,16 @@
          "datetime" : "2023-05-29T21:45:00+0100",
          "direction" : "Down river",
          "vessel" : "Motor Vessel Le Champlain"
+      },
+      {
+         "datetime" : "2023-05-31T10:30:00+0100",
+         "direction" : "Up river",
+         "vessel" : "Maintenance Lift"
+      },
+      {
+         "datetime" : "2023-06-01T10:30:00+0100",
+         "direction" : "Up river",
+         "vessel" : "Maintenance Lift"
       },
       {
          "datetime" : "2023-06-03T12:45:00+0100",
