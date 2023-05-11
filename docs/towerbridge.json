@@ -1,26 +1,6 @@
 {
    "lifts" : [
       {
-         "datetime" : "2023-05-10T07:00:00+0100",
-         "direction" : "Down river",
-         "vessel" : "Marine Tugboat Svitzer Adira"
-      },
-      {
-         "datetime" : "2023-05-10T17:00:00+0100",
-         "direction" : "Up river",
-         "vessel" : "Sailing Barge Gladys"
-      },
-      {
-         "datetime" : "2023-05-10T18:45:00+0100",
-         "direction" : "Down river",
-         "vessel" : "Sailing Barge Gladys"
-      },
-      {
-         "datetime" : "2023-05-10T22:00:00+0100",
-         "direction" : "Up river",
-         "vessel" : "Sailing Barge Gladys"
-      },
-      {
          "datetime" : "2023-05-11T10:30:00+0100",
          "direction" : "Up river",
          "vessel" : "Maintenance Lift"
@@ -136,6 +116,16 @@
          "vessel" : "Maintenance Lift"
       },
       {
+         "datetime" : "2023-05-23T08:15:00+0100",
+         "direction" : "Up river",
+         "vessel" : "Paddle Steamer Dixie Queen"
+      },
+      {
+         "datetime" : "2023-05-23T10:00:00+0100",
+         "direction" : "Down river",
+         "vessel" : "Paddle Steamer Dixie Queen"
+      },
+      {
          "datetime" : "2023-05-23T10:30:00+0100",
          "direction" : "Up river",
          "vessel" : "Maintenance Lift"
@@ -144,6 +134,16 @@
          "datetime" : "2023-05-23T15:00:00+0100",
          "direction" : "Up river",
          "vessel" : "Maintenance Lift"
+      },
+      {
+         "datetime" : "2023-05-23T15:30:00+0100",
+         "direction" : "Up river",
+         "vessel" : "Paddle Steamer Dixie Queen"
+      },
+      {
+         "datetime" : "2023-05-23T16:15:00+0100",
+         "direction" : "Down river",
+         "vessel" : "Paddle Steamer Dixie Queen"
       },
       {
          "datetime" : "2023-05-24T10:00:00+0100",
