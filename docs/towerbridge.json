@@ -1,31 +1,6 @@
 {
    "lifts" : [
       {
-         "datetime" : "2023-05-11T10:30:00+0100",
-         "direction" : "Up river",
-         "vessel" : "Maintenance Lift"
-      },
-      {
-         "datetime" : "2023-05-11T18:45:00+0100",
-         "direction" : "Down river",
-         "vessel" : "Sailing Barge Gladys"
-      },
-      {
-         "datetime" : "2023-05-11T22:00:00+0100",
-         "direction" : "Up river",
-         "vessel" : "Sailing Barge Gladys"
-      },
-      {
-         "datetime" : "2023-05-12T06:00:00+0100",
-         "direction" : "Up river",
-         "vessel" : "Marine Tugboat Svitzer Adira"
-      },
-      {
-         "datetime" : "2023-05-12T06:00:00+0100",
-         "direction" : "Down river",
-         "vessel" : "Sailing Barge Gladys"
-      },
-      {
          "datetime" : "2023-05-12T06:45:00+0100",
          "direction" : "Down river",
          "vessel" : "Motor Vessel Silver Wind"
@@ -249,6 +224,31 @@
          "datetime" : "2023-06-24T10:30:00+0100",
          "direction" : "Up river",
          "vessel" : "Sailing Barge Will"
+      },
+      {
+         "datetime" : "2023-06-24T11:15:00+0100",
+         "direction" : "Down river",
+         "vessel" : "Sailing Barge Will"
+      },
+      {
+         "datetime" : "2023-06-24T15:30:00+0100",
+         "direction" : "Up river",
+         "vessel" : "Sailing Barge Will"
+      },
+      {
+         "datetime" : "2023-06-24T16:15:00+0100",
+         "direction" : "Down river",
+         "vessel" : "Sailing Barge Will"
+      },
+      {
+         "datetime" : "2023-06-29T10:30:00+0100",
+         "direction" : "Up river",
+         "vessel" : "PS Dixie Queen"
+      },
+      {
+         "datetime" : "2023-06-29T11:30:00+0100",
+         "direction" : "Down river",
+         "vessel" : "PS Dixie Queen"
       }
    ]
 }
