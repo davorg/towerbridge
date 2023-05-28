@@ -1,11 +1,6 @@
 {
    "lifts" : [
       {
-         "datetime" : "2023-05-27T19:30:00+0100",
-         "direction" : "Down river",
-         "vessel" : "Motor Vessel Dutch Master"
-      },
-      {
          "datetime" : "2023-05-28T18:45:00+0100",
          "direction" : "Up river",
          "vessel" : "Motor Vessel Le Champlain"
@@ -248,6 +243,11 @@
       {
          "datetime" : "2023-06-24T10:30:00+0100",
          "direction" : "Up river",
+         "vessel" : "Sailing Barge Will"
+      },
+      {
+         "datetime" : "2023-06-24T11:15:00+0100",
+         "direction" : "Down river",
          "vessel" : "Sailing Barge Will"
       }
    ]
