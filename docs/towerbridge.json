@@ -1,21 +1,6 @@
 {
    "lifts" : [
       {
-         "datetime" : "2023-05-28T18:45:00+0100",
-         "direction" : "Up river",
-         "vessel" : "Motor Vessel Le Champlain"
-      },
-      {
-         "datetime" : "2023-05-28T18:45:00+0100",
-         "direction" : "Up river",
-         "vessel" : "Marine Tugboat RT Peter"
-      },
-      {
-         "datetime" : "2023-05-28T19:30:00+0100",
-         "direction" : "Down river",
-         "vessel" : "Marine Tugboat RT Peter"
-      },
-      {
          "datetime" : "2023-05-29T20:15:00+0100",
          "direction" : "Down river",
          "vessel" : "Motor Vessel Le Champlain"
@@ -249,6 +234,21 @@
          "datetime" : "2023-06-24T11:15:00+0100",
          "direction" : "Down river",
          "vessel" : "Sailing Barge Will"
+      },
+      {
+         "datetime" : "2023-06-24T15:30:00+0100",
+         "direction" : "Up river",
+         "vessel" : "Sailing Barge Will"
+      },
+      {
+         "datetime" : "2023-06-24T16:15:00+0100",
+         "direction" : "Down river",
+         "vessel" : "Sailing Barge Will"
+      },
+      {
+         "datetime" : "2023-06-27T19:30:00+0100",
+         "direction" : "Up river",
+         "vessel" : "Paddle Steamer Dixie Queen"
       }
    ]
 }
