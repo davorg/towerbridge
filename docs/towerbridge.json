@@ -1,11 +1,6 @@
 {
    "lifts" : [
       {
-         "datetime" : "2023-05-29T20:15:00+0100",
-         "direction" : "Down river",
-         "vessel" : "Motor Vessel Le Champlain"
-      },
-      {
          "datetime" : "2023-05-31T10:30:00+0100",
          "direction" : "Up river",
          "vessel" : "Maintenance Lift"
@@ -248,6 +243,11 @@
       {
          "datetime" : "2023-06-27T19:30:00+0100",
          "direction" : "Up river",
+         "vessel" : "Paddle Steamer Dixie Queen"
+      },
+      {
+         "datetime" : "2023-06-27T20:15:00+0100",
+         "direction" : "Down river",
          "vessel" : "Paddle Steamer Dixie Queen"
       }
    ]
