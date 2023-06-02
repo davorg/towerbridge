@@ -1,21 +1,6 @@
 {
    "lifts" : [
       {
-         "datetime" : "2023-06-01T14:15:00+0100",
-         "direction" : "Up river",
-         "vessel" : "Sailing Barge Gladys"
-      },
-      {
-         "datetime" : "2023-06-01T18:45:00+0100",
-         "direction" : "Down river",
-         "vessel" : "Sailing Barge Gladys"
-      },
-      {
-         "datetime" : "2023-06-01T22:00:00+0100",
-         "direction" : "Up river",
-         "vessel" : "Sailing Barge Gladys"
-      },
-      {
          "datetime" : "2023-06-02T11:15:00+0100",
          "direction" : "Down river",
          "vessel" : "Sailing Barge Gladys"
@@ -151,6 +136,11 @@
          "vessel" : "Sailing Barge Gladys"
       },
       {
+         "datetime" : "2023-06-13T10:30:00+0100",
+         "direction" : "Up river",
+         "vessel" : "Maintenance Lift"
+      },
+      {
          "datetime" : "2023-06-14T18:45:00+0100",
          "direction" : "Up river",
          "vessel" : "Sailing Barge Gladys"
@@ -249,6 +239,16 @@
          "datetime" : "2023-06-21T22:45:00+0100",
          "direction" : "Down river",
          "vessel" : "Paddle Steamer Dixie Queen"
+      },
+      {
+         "datetime" : "2023-06-24T10:30:00+0100",
+         "direction" : "Up river",
+         "vessel" : "Sailing Barge Will"
+      },
+      {
+         "datetime" : "2023-06-24T11:15:00+0100",
+         "direction" : "Down river",
+         "vessel" : "Sailing Barge Will"
       }
    ]
 }
