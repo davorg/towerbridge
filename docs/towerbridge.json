@@ -1,26 +1,6 @@
 {
    "lifts" : [
       {
-         "datetime" : "2023-06-10T14:30:00+0100",
-         "direction" : "Up river",
-         "vessel" : "Sailing Barge Will"
-      },
-      {
-         "datetime" : "2023-06-10T15:15:00+0100",
-         "direction" : "Down river",
-         "vessel" : "Sailing Barge Will"
-      },
-      {
-         "datetime" : "2023-06-10T16:45:00+0100",
-         "direction" : "Up river",
-         "vessel" : "Sailing Barge Ardwina"
-      },
-      {
-         "datetime" : "2023-06-10T17:15:00+0100",
-         "direction" : "Down river",
-         "vessel" : "Sailing Barge Ardwina"
-      },
-      {
          "datetime" : "2023-06-12T08:30:00+0100",
          "direction" : "Up river",
          "vessel" : "Project 1601"
@@ -249,6 +229,26 @@
          "datetime" : "2023-06-29T16:00:00+0100",
          "direction" : "Up river",
          "vessel" : "Sailing Barge Will"
+      },
+      {
+         "datetime" : "2023-06-29T16:45:00+0100",
+         "direction" : "Down river",
+         "vessel" : "Sailing Barge Will"
+      },
+      {
+         "datetime" : "2023-06-29T18:45:00+0100",
+         "direction" : "Down river",
+         "vessel" : "Sailing Barge Gladys"
+      },
+      {
+         "datetime" : "2023-06-29T22:00:00+0100",
+         "direction" : "Up river",
+         "vessel" : "Sailing Barge Gladys"
+      },
+      {
+         "datetime" : "2023-06-30T09:45:00+0100",
+         "direction" : "Down river",
+         "vessel" : "Sailing Barge Gladys"
       }
    ]
 }
