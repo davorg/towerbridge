@@ -26,6 +26,11 @@
          "vessel" : "Sailing Barge Gladys"
       },
       {
+         "datetime" : "2023-06-26T12:30:00+0100",
+         "direction" : "Up river",
+         "vessel" : "Paddle Steamer Dixie Queen"
+      },
+      {
          "datetime" : "2023-06-26T18:45:00+0100",
          "direction" : "Down river",
          "vessel" : "Sailing Barge Gladys"
@@ -54,6 +59,11 @@
          "datetime" : "2023-06-27T10:30:00+0100",
          "direction" : "Up river",
          "vessel" : "Maintenance Lift"
+      },
+      {
+         "datetime" : "2023-06-27T10:30:00+0100",
+         "direction" : "Down river",
+         "vessel" : "Paddle Steamer Dixie Queen"
       },
       {
          "datetime" : "2023-06-27T19:30:00+0100",
@@ -86,6 +96,11 @@
          "vessel" : "Sailing Barge Gladys"
       },
       {
+         "datetime" : "2023-06-29T08:45:00+0100",
+         "direction" : "Down river",
+         "vessel" : "Sailing Barge Gladys"
+      },
+      {
          "datetime" : "2023-06-29T09:30:00+0100",
          "direction" : "Up river",
          "vessel" : "Maintenance Lift"
@@ -109,21 +124,6 @@
          "datetime" : "2023-06-29T16:45:00+0100",
          "direction" : "Down river",
          "vessel" : "Sailing Barge Will"
-      },
-      {
-         "datetime" : "2023-06-29T18:45:00+0100",
-         "direction" : "Down river",
-         "vessel" : "Sailing Barge Gladys"
-      },
-      {
-         "datetime" : "2023-06-29T22:00:00+0100",
-         "direction" : "Up river",
-         "vessel" : "Sailing Barge Gladys"
-      },
-      {
-         "datetime" : "2023-06-30T09:45:00+0100",
-         "direction" : "Down river",
-         "vessel" : "Sailing Barge Gladys"
       },
       {
          "datetime" : "2023-06-30T16:00:00+0100",
