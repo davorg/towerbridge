@@ -1,51 +1,6 @@
 {
    "lifts" : [
       {
-         "datetime" : "2023-07-03T09:00:00+0100",
-         "direction" : "Up river",
-         "vessel" : "Maintenance Lift"
-      },
-      {
-         "datetime" : "2023-07-03T10:00:00+0100",
-         "direction" : "Up river",
-         "vessel" : "Maintenance Lift"
-      },
-      {
-         "datetime" : "2023-07-03T11:00:00+0100",
-         "direction" : "Up river",
-         "vessel" : "Maintenance Lift"
-      },
-      {
-         "datetime" : "2023-07-03T12:00:00+0100",
-         "direction" : "Up river",
-         "vessel" : "Maintenance Lift"
-      },
-      {
-         "datetime" : "2023-07-03T13:00:00+0100",
-         "direction" : "Up river",
-         "vessel" : "Maintenance Lift"
-      },
-      {
-         "datetime" : "2023-07-03T19:00:00+0100",
-         "direction" : "Up river",
-         "vessel" : "Paddle Steamer Dixie Queen"
-      },
-      {
-         "datetime" : "2023-07-03T19:45:00+0100",
-         "direction" : "Down river",
-         "vessel" : "Paddle Steamer Dixie Queen"
-      },
-      {
-         "datetime" : "2023-07-03T22:00:00+0100",
-         "direction" : "Up river",
-         "vessel" : "Paddle Steamer Dixie Queen"
-      },
-      {
-         "datetime" : "2023-07-03T22:45:00+0100",
-         "direction" : "Down river",
-         "vessel" : "Paddle Steamer Dixie Queen"
-      },
-      {
          "datetime" : "2023-07-04T11:45:00+0100",
          "direction" : "Up river",
          "vessel" : "Sailing Barge Will"
@@ -249,6 +204,51 @@
          "datetime" : "2023-07-14T10:15:00+0100",
          "direction" : "Down river",
          "vessel" : "Sailing Barge Gladys"
+      },
+      {
+         "datetime" : "2023-07-14T16:00:00+0100",
+         "direction" : "Up river",
+         "vessel" : "Sailing Barge Will"
+      },
+      {
+         "datetime" : "2023-07-14T16:45:00+0100",
+         "direction" : "Down river",
+         "vessel" : "Sailing Barge Will"
+      },
+      {
+         "datetime" : "2023-07-14T18:30:00+0100",
+         "direction" : "Up river",
+         "vessel" : "Paddle Steamer Dixie Queen"
+      },
+      {
+         "datetime" : "2023-07-14T19:30:00+0100",
+         "direction" : "Down river",
+         "vessel" : "Paddle Steamer Dixie Queen"
+      },
+      {
+         "datetime" : "2023-07-14T22:45:00+0100",
+         "direction" : "Up river",
+         "vessel" : "Paddle Steamer Dixie Queen"
+      },
+      {
+         "datetime" : "2023-07-15T00:15:00+0100",
+         "direction" : "Down river",
+         "vessel" : "Paddle Steamer Dixie Queen"
+      },
+      {
+         "datetime" : "2023-07-15T01:15:00+0100",
+         "direction" : "Up river",
+         "vessel" : "Motor Ship Hamburg"
+      },
+      {
+         "datetime" : "2023-07-15T20:00:00+0100",
+         "direction" : "Up river",
+         "vessel" : "Paddle Steamer Dixie Queen"
+      },
+      {
+         "datetime" : "2023-07-15T20:45:00+0100",
+         "direction" : "Down river",
+         "vessel" : "Paddle Steamer Dixie Queen"
       }
    ]
 }
