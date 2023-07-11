@@ -146,6 +146,16 @@
          "vessel" : "Motor Ship Hamburg"
       },
       {
+         "datetime" : "2023-07-15T01:45:00+0100",
+         "direction" : "Up river",
+         "vessel" : "Marine Towage and Salvage/Tugboat RT Peter"
+      },
+      {
+         "datetime" : "2023-07-15T02:00:00+0100",
+         "direction" : "Down river",
+         "vessel" : "Marine Towage and Salvage/Tugboat RT Peter"
+      },
+      {
          "datetime" : "2023-07-15T20:00:00+0100",
          "direction" : "Up river",
          "vessel" : "Paddle Steamer Dixie Queen"
@@ -156,9 +166,19 @@
          "vessel" : "Paddle Steamer Dixie Queen"
       },
       {
+         "datetime" : "2023-07-16T23:45:00+0100",
+         "direction" : "Up river",
+         "vessel" : "Marine Towage and Salvage/Tugboat RT Peter"
+      },
+      {
          "datetime" : "2023-07-17T00:15:00+0100",
          "direction" : "Down river",
          "vessel" : "Motor Ship Hamburg"
+      },
+      {
+         "datetime" : "2023-07-17T00:15:00+0100",
+         "direction" : "Down river",
+         "vessel" : "Marine Towage and Salvage/Tugboat RT Peter"
       },
       {
          "datetime" : "2023-07-18T10:30:00+0100",
@@ -229,26 +249,6 @@
          "datetime" : "2023-07-21T22:30:00+0100",
          "direction" : "Up river",
          "vessel" : "Paddle Steamer Dixie Queen"
-      },
-      {
-         "datetime" : "2023-07-21T23:15:00+0100",
-         "direction" : "Down river",
-         "vessel" : "Paddle Steamer Dixie Queen"
-      },
-      {
-         "datetime" : "2023-07-22T10:30:00+0100",
-         "direction" : "Up river",
-         "vessel" : "Sailing Barge Will"
-      },
-      {
-         "datetime" : "2023-07-22T11:15:00+0100",
-         "direction" : "Down river",
-         "vessel" : "Sailing Barge Will"
-      },
-      {
-         "datetime" : "2023-07-22T15:30:00+0100",
-         "direction" : "Up river",
-         "vessel" : "Sailing Barge Will"
       }
    ]
 }
