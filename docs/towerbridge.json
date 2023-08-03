@@ -1,31 +1,6 @@
 {
    "lifts" : [
       {
-         "datetime" : "2023-08-03T04:15:00+0100",
-         "direction" : "Up river",
-         "vessel" : "Motor Vessel Star Legend"
-      },
-      {
-         "datetime" : "2023-08-03T04:15:00+0100",
-         "direction" : "Up river",
-         "vessel" : "Marine Tugboat RT Ambition"
-      },
-      {
-         "datetime" : "2023-08-03T04:15:00+0100",
-         "direction" : "Up river",
-         "vessel" : "Marine Tugboat RT Peter"
-      },
-      {
-         "datetime" : "2023-08-03T05:00:00+0100",
-         "direction" : "Down river",
-         "vessel" : "Marine Tugboat RT Ambition"
-      },
-      {
-         "datetime" : "2023-08-03T05:00:00+0100",
-         "direction" : "Down river",
-         "vessel" : "Marine Tugboat RT Peter"
-      },
-      {
          "datetime" : "2023-08-04T15:45:00+0100",
          "direction" : "Up river",
          "vessel" : "Marine Tugboat RT Ambition"
@@ -49,6 +24,11 @@
          "datetime" : "2023-08-04T16:15:00+0100",
          "direction" : "Down river",
          "vessel" : "Marine Tugboat RT Peter"
+      },
+      {
+         "datetime" : "2023-08-04T17:15:00+0100",
+         "direction" : "Up river",
+         "vessel" : "Motor Vessel Dutch Master"
       },
       {
          "datetime" : "2023-08-04T19:30:00+0100",
@@ -66,9 +46,14 @@
          "vessel" : "Paddle Steamer Dixie Queen"
       },
       {
-         "datetime" : "2023-08-05T00:45:00+0100",
+         "datetime" : "2023-08-05T00:00:00+0100",
          "direction" : "Down river",
          "vessel" : "Paddle Steamer Dixie Queen"
+      },
+      {
+         "datetime" : "2023-08-05T16:00:00+0100",
+         "direction" : "Up river",
+         "vessel" : "Motor Vessel Dutch Master"
       },
       {
          "datetime" : "2023-08-06T12:30:00+0100",
@@ -89,6 +74,11 @@
          "datetime" : "2023-08-06T17:15:00+0100",
          "direction" : "Down river",
          "vessel" : "Paddle Steamer Dixie Queen"
+      },
+      {
+         "datetime" : "2023-08-06T17:45:00+0100",
+         "direction" : "Up river",
+         "vessel" : "Motor Vessel Dutch Master"
       },
       {
          "datetime" : "2023-08-10T11:00:00+0100",
@@ -151,6 +141,16 @@
          "vessel" : "Paddle Steamer Dixie Queen"
       },
       {
+         "datetime" : "2023-08-19T16:30:00+0100",
+         "direction" : "Up river",
+         "vessel" : "Motor Vessel Dutch Master"
+      },
+      {
+         "datetime" : "2023-08-20T17:30:00+0100",
+         "direction" : "Up river",
+         "vessel" : "Motor Vessel Dutch Master"
+      },
+      {
          "datetime" : "2023-08-23T17:30:00+0100",
          "direction" : "Up river",
          "vessel" : "Paddle Steamer Dixie Queen"
@@ -169,6 +169,11 @@
          "datetime" : "2023-08-23T22:15:00+0100",
          "direction" : "Down river",
          "vessel" : "Paddle Steamer Dixie Queen"
+      },
+      {
+         "datetime" : "2023-08-24T20:30:00+0100",
+         "direction" : "Down river",
+         "vessel" : "Motor Vessel Dutch Master"
       },
       {
          "datetime" : "2023-08-30T18:45:00+0100",
@@ -243,11 +248,6 @@
       {
          "datetime" : "2023-09-06T19:45:00+0100",
          "direction" : "Down river",
-         "vessel" : "Paddle Steamer Dixie Queen"
-      },
-      {
-         "datetime" : "2023-09-06T21:45:00+0100",
-         "direction" : "Up river",
          "vessel" : "Paddle Steamer Dixie Queen"
       }
    ]
