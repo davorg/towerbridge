@@ -37,18 +37,6 @@ jobs:
         mkdir -p docs
         perl makecal > towerbridge.log 2>&1
 
-    - name: Commit new page
-      if: github.repository == 'davorg/towerbridge'
-      run: |
-        git config --global --add safe.directory /__w/towerbridge/towerbridge
-        GIT_STATUS=$(git status --porcelain)
-        echo $GIT_STATUS
-        git config user.name github-actions[bot]
-        git config user.email 41898282+github-actions[bot]@users.noreply.github.com
-        git add docs/
-        if [ "$GIT_STATUS" != "" ]; then git commit -m "Automated Web page generation"; fi
-        if [ "$GIT_STATUS" != "" ]; then git push; fi
-
     - name: Update pages artifact
       uses: actions/upload-pages-artifact@v2
       with:
