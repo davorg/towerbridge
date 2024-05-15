@@ -60,27 +60,26 @@
             or as <a href="/towerbridge.json">JSON</a>.</p>
     </div>
 
-    <!-- AddToAny BEGIN -->
-    <div class="a2a_kit a2a_kit_size_32 a2a_default_style">
-      <a class="a2a_dd" href="https://www.addtoany.com/share"></a>
-      <a class="a2a_button_facebook"></a>
-      <a class="a2a_button_x"></a>
-      <a class="a2a_button_whatsapp"></a>
-      <a class="a2a_button_email"></a>
-      <a class="a2a_button_copy_link"></a>
-    </div>
-    <script async src="https://static.addtoany.com/menu/page.js"></script>
-    <!-- AddToAny END -->
-
     <footer>
-      <div class="addthis_native_toolbox"></div>
-      Tower Bridge lift data in machine-readable formats.<br>
+      <!-- AddToAny BEGIN -->
+      <div class="a2a_kit a2a_kit_size_32 a2a_default_style">
+        <a class="a2a_dd" href="https://www.addtoany.com/share"></a>
+        <a class="a2a_button_facebook"></a>
+        <a class="a2a_button_x"></a>
+        <a class="a2a_button_whatsapp"></a>
+        <a class="a2a_button_email"></a>
+        <a class="a2a_button_copy_link"></a>
+      </div>
+      <script async src="https://static.addtoany.com/menu/page.js"></script>
+      <!-- AddToAny END -->
+
+      <p>Tower Bridge lift data in machine-readable formats.<br>
       Made by <a href="https://twitter.com/davorg">@davorg</a>.<br>
       Let him know if you would like the data in any other format.<br>
       Data scraped from the
       <a href="http://www.towerbridge.org.uk/lift-times/">Tower Bridge web
       site</a>.<br>
-      Code <a href="https://github.com/davorg/towerbridge">on Github</a>.
+      Code <a href="https://github.com/davorg/towerbridge">on Github</a>.</p>
     </footer>
   </body>
 </html>
