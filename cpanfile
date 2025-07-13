@@ -11,3 +11,4 @@ requires 'Data::ICal::Entry::TimeZone::Daylight';
 requires 'Template';
 requires 'Moo';
 requires 'Types::Standard';
+requires 'LWP::Protocol::https';
