@@ -9,3 +9,4 @@ requires 'Data::ICal::Entry::TimeZone';
 requires 'Data::ICal::Entry::TimeZone::Standard';
 requires 'Data::ICal::Entry::TimeZone::Daylight';
 requires 'Template';
+requires 'Moo';
