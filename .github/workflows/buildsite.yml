@@ -38,7 +38,7 @@ jobs:
         perl makecal 2>&1 | tee towerbridge.log
 
     - name: Update pages artifact
-      uses: actions/upload-pages-artifact@v3
+      uses: actions/upload-pages-artifact@v4
       with:
         path: docs/
 
