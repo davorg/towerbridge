@@ -2,6 +2,8 @@ package TowerBridge;
 
 use strict;
 use warnings;
+use feature 'state';
+use builtin 'trim';
 
 use Moo;
 use Types::Standard qw[Str ArrayRef InstanceOf];
@@ -87,33 +89,49 @@ has lifts => (
 sub _build_lifts {
   my $self = shift;
 
-  my $qry_date_fmt = '%d-%m-%Y';
-  my $lift_times_from = $self->now->strftime($qry_date_fmt);
-  my $lift_times_to   = $self->now->clone->add(years => 1)->strftime($qry_date_fmt);
+  my @lifts;
+
+  my $url = 'https://www.towerbridge.org.uk/bridge-lifts/';
+
+  wq($url)
+    ->find('.time-table.mb-64')
+    ->each(sub { push @lifts, parse_data($_[1]) });
+
+  debug('Returning ' . scalar @lifts . " lift(s) from _build_lifts\n");
+
+  return \@lifts;
+}
+
+sub parse_data {
+  my ($div) = @_;
+
+  state $dt_parser //= DateTime::Format::Strptime->new(
+    time_zone => 'Europe/London',
+    pattern => '%A %d %B %Y %H:%M',
+  );
+
+  my $date = $div->find('.time-table__heading')->text;
+
+  my $rows = $div->find('.bridge-lift-row');
+
+  debug('parse_data found ', $rows->size, " bridge lift rows on $date\n");
 
   my @lifts;
 
-  my $url = 'https://www.towerbridge.org.uk/lift-times/';
-  my $params = "lift_times_from=$lift_times_from&lift_times_to=$lift_times_to";
+  $rows->each(sub {
+    my ($first, $desc, $vessel) = map { $_->text } $_->find('.bridge-lift-row__content p');
+    my ($time, $direction) = split /\s+/, $first;
 
-  wq("$url?$params")
-    ->find('table.views-table tbody tr')
-    ->each(sub { push @lifts, [ map { trim($_->text) } $_[1]->contents ] });
+    push @lifts,     TowerBridge::Lift->new({
+      datetime  => $dt_parser->parse_datetime("$date $time"),
+      vessel    => "$desc $vessel",
+      direction => $direction,
+    })
+  });
 
-  my $dt_parser = DateTime::Format::Strptime->new(
-    time_zone => 'Europe/London',
-    pattern => '%H:%M %d %b %Y',
-  );
+  debug('Returning ' . scalar @lifts . " lift(s) from parse_data\n");
 
-  @lifts = map {
-    TowerBridge::Lift->new({
-    datetime  => $dt_parser->parse_datetime("$_->[2] $_->[1]"),
-    vessel    => $_->[3],
-    direction => $_->[4],
-  })
-  } @lifts;
-
-  return \@lifts;
+  return @lifts;
 }
 
 has ical => (
@@ -209,14 +227,9 @@ sub make_html {
   return;
 }
 
-## NOT METHODS ##
+sub debug {
+  return unless $ENV{TOWER_BRIDGE_DEBUG};
 
-sub trim {
-  return map {
-    s/^\s+//;
-    s/\s+$//;
-    $_
-  } @_;
+  warn @_;
 }
-
 1;
