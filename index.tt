@@ -56,11 +56,26 @@
 [% END -%]
       </div>
 
-          <p>Download the data as <a href="/towerbridge.ics">a calendar</a>
-            or as <a href="/towerbridge.json">JSON</a>.</p>
+          <p>Download the data as
+            <a href="/towerbridge.ics"
+               data-resource-type="calendar"
+               data-resource-action="download"
+               data-resource-format="ics"
+               onclick="return trackResourceClick(event);"
+            >a calendar</a>
+            or as
+            <a href="/towerbridge.json"
+               data-resource-type="json"
+               data-resource-action="download"
+               data-resource-format="json"
+               onclick="return trackResourceClick(event);"
+            >JSON</a>.</p>
           <p>Subscribe to
             <a href="webcal://towerbridge.dave.org.uk/towerbridge.ics"
-               onclick="gtag('event','calendar_subscribe_click',{method:'webcal',feed:'public'});"
+               data-resource-type="json"
+               data-resource-action="download"
+               data-resource-format="json"
+               onclick="return trackResourceClick(event);"
             >the calendar</a>.</p>
     </div>
 
@@ -85,5 +100,44 @@
       site</a>.<br>
       Code <a href="https://github.com/davorg/towerbridge">on Github</a>.</p>
     </footer>
+
+    <script>
+      function trackResourceClick(event) {
+        const link = event.currentTarget;
+        const href = link.href;
+
+        const params = {
+          resource_type: link.dataset.resourceType || 'unknown',
+          resource_action: link.dataset.resourceAction || 'click',
+          resource_format: link.dataset.resourceFormat || 'unknown',
+          link_url: href,
+          link_text: (link.textContent || '').trim()
+        };
+
+        const hasGtag = typeof window.gtag === 'function';
+        const hasDataLayer = Array.isArray(window.dataLayer);
+
+        // If analytics isn't present, just follow the link normally.
+        if (!hasGtag && !hasDataLayer) return true;
+
+        // Send the analytics event
+        if (hasGtag) {
+          window.gtag('event', 'resource_click', params);
+        } else {
+          // GTM-style: push a single event + params
+          window.dataLayer.push({ event: 'resource_click', ...params });
+        }
+
+        // Don't interfere with webcal: handoff (some handlers dislike preventDefault)
+        const isWebcal = href.startsWith('webcal:');
+        if (isWebcal) return true;
+
+        // For http(s), delay navigation very briefly so the event has a chance to send
+        event.preventDefault();
+        setTimeout(() => { window.location.href = href; }, 150);
+        return false;
+      }
+    </script>
+
   </body>
 </html>
