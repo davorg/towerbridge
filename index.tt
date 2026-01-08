@@ -72,9 +72,9 @@
             >JSON</a>.</p>
           <p>Subscribe to
             <a href="webcal://towerbridge.dave.org.uk/towerbridge.ics"
-               data-resource-type="json"
-               data-resource-action="download"
-               data-resource-format="json"
+               data-resource-type="calendar"
+               data-resource-action="subscribe"
+               data-resource-format="ics"
                onclick="return trackResourceClick(event);"
             >the calendar</a>.</p>
     </div>
