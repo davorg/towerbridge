@@ -59,7 +59,9 @@
           <p>Download the data as <a href="/towerbridge.ics">a calendar</a>
             or as <a href="/towerbridge.json">JSON</a>.</p>
           <p>Subscribe to
-            <a href="webcal://towerbridge.dave.org.uk/towerbridge.ics">the calendar</a>.</p>
+            <a href="webcal://towerbridge.dave.org.uk/towerbridge.ics"
+               onclick="gtag('event','calendar_subscribe_click',{method:'webcal',feed:'public'});"
+            >the calendar</a>.</p>
     </div>
 
     <footer>
