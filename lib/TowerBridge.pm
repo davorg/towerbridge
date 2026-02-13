@@ -125,7 +125,7 @@ sub parse_data {
     push @lifts,     TowerBridge::Lift->new({
       datetime  => $dt_parser->parse_datetime("$date $time"),
       vessel    => "$desc $vessel",
-      direction => $direction,
+      direction => ($direction // ''), # Direction is sometimes omitted
     })
   });
 
